@@ -1,0 +1,1008 @@
+ObjectType, RelationshipType, RelationshipName, Return Type, Platform
+Column, property, Collation, String, All
+Column, property, IsIdentityNotForReplication, Boolean, SqlAzureV12 | OnPremises
+Column, property, Nullable, Boolean, All
+Column, property, IsRowGuidCol, Boolean, SqlAzureV12 | OnPremises
+Column, property, Sparse, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+Column, property, Expression, SqlScriptProperty, All
+Column, property, Persisted, Boolean, All
+Column, property, PersistedNullable, System.Boolean?, All
+Column, property, Scale, Int32, All
+Column, property, Precision, Int32, All
+Column, property, Length, Int32, All
+Column, property, IsMax, Boolean, All
+Column, property, XmlStyle, XmlStyle, All
+Column, property, EncryptionAlgorithmName, String, SqlAzureV12 | Sql130 | Sql140 | Sql150
+Column, property, EncryptionType, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+Column, property, GeneratedAlwaysType, ColumnGeneratedAlwaysType, SqlAzureV12 | Sql130 | Sql140 | Sql150
+Column, property, GraphType, Int32, SqlAzureV12 | Sql140 | Sql150
+Column, property, IdentityIncrement, String, All
+Column, property, IdentitySeed, String, All
+Column, property, IsFileStream, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Column, property, IsHidden, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+Column, property, IsIdentity, Boolean, All
+Column, property, IsPseudoColumn, Boolean, SqlAzureV12 | Sql140 | Sql150
+Column, property, MaskingFunction, String, SqlAzureV12 | Sql130 | Sql140 | Sql150
+Column, relationship, ExpressionDependencies, Peer, All
+Column, relationship, XmlSchemaCollection, Peer, All
+Column, relationship, DataType, Peer, All
+Column, relationship, ColumnEncryptionKey, Peer, SqlAzureV12 | Sql130 | Sql140 | Sql150
+TableValuedFunction, property, ReturnsNullOnNullInput, Boolean, All
+TableValuedFunction, property, AnsiNullsOn, System.Boolean?, All
+TableValuedFunction, property, CalledOnNullInput, Boolean, All
+TableValuedFunction, property, ExecuteAsCaller, Boolean, All
+TableValuedFunction, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+TableValuedFunction, property, ExecuteAsOwner, Boolean, All
+TableValuedFunction, property, QuotedIdentifierOn, System.Boolean?, All
+TableValuedFunction, property, WithSchemaBinding, Boolean, All
+TableValuedFunction, property, ExecuteAsSelf, Boolean, All
+TableValuedFunction, property, ReturnTableVariableName, String, All
+TableValuedFunction, property, ClassName, String, All
+TableValuedFunction, property, DataAccess, Microsoft.SqlServer.Server.DataAccessKind?, SqlAzureV12 | OnPremises
+TableValuedFunction, property, FillRowMethodName, String, SqlAzureV12 | OnPremises
+TableValuedFunction, property, Deterministic, System.Boolean?, SqlAzureV12 | OnPremises
+TableValuedFunction, property, Precise, System.Boolean?, SqlAzureV12 | OnPremises
+TableValuedFunction, property, MethodName, String, All
+TableValuedFunction, property, SystemDataAccess, Microsoft.SqlServer.Server.SystemDataAccessKind?, SqlAzureV12 | OnPremises
+TableValuedFunction, property, IsNativeCompiled, Boolean, All
+TableValuedFunction, property, IsReplicated, Boolean, OnPremises
+TableValuedFunction, relationship, Assembly, Composing, All
+TableValuedFunction, relationship, TableOption, Composing, All
+TableValuedFunction, relationship, ReturnType, Peer, All
+TableValuedFunction, relationship, BodyDependencies, Peer, All
+TableValuedFunction, relationship, Columns, Composing, All
+TableValuedFunction, relationship, Login, Peer, All
+TableValuedFunction, relationship, Parameters, Composing, All
+TableValuedFunction, relationship, Schema, Hierarchical, All
+TableValuedFunction, relationship, User, Peer, All
+ScalarFunction, property, ReturnsNullOnNullInput, Boolean, All
+ScalarFunction, property, AnsiNullsOn, System.Boolean?, All
+ScalarFunction, property, CalledOnNullInput, Boolean, All
+ScalarFunction, property, ExecuteAsCaller, Boolean, All
+ScalarFunction, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+ScalarFunction, property, ExecuteAsOwner, Boolean, All
+ScalarFunction, property, QuotedIdentifierOn, System.Boolean?, All
+ScalarFunction, property, WithSchemaBinding, Boolean, All
+ScalarFunction, property, ExecuteAsSelf, Boolean, All
+ScalarFunction, property, ClassName, String, All
+ScalarFunction, property, DataAccess, Microsoft.SqlServer.Server.DataAccessKind?, SqlAzureV12 | OnPremises
+ScalarFunction, property, FillRowMethodName, String, SqlAzureV12 | OnPremises
+ScalarFunction, property, Deterministic, System.Boolean?, SqlAzureV12 | OnPremises
+ScalarFunction, property, Precise, System.Boolean?, SqlAzureV12 | OnPremises
+ScalarFunction, property, MethodName, String, All
+ScalarFunction, property, SystemDataAccess, Microsoft.SqlServer.Server.SystemDataAccessKind?, SqlAzureV12 | OnPremises
+ScalarFunction, property, IsInline, Boolean, SqlAzureV12 | Sql150
+ScalarFunction, property, IsInlineable, Boolean, SqlAzureV12 | Sql150
+ScalarFunction, property, IsNativeCompiled, Boolean, All
+ScalarFunction, property, IsReplicated, Boolean, OnPremises
+ScalarFunction, relationship, Assembly, Composing, All
+ScalarFunction, relationship, ReturnType, Peer, All
+ScalarFunction, relationship, BodyDependencies, Peer, All
+ScalarFunction, relationship, Login, Peer, All
+ScalarFunction, relationship, Parameters, Composing, All
+ScalarFunction, relationship, Schema, Hierarchical, All
+ScalarFunction, relationship, User, Peer, All
+ClrTableOption, property, ClassName, String, All
+ClrTableOption, relationship, OrderColumns, Peer, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Aggregate, property, InvariantToDuplicates, System.Boolean?, SqlAzureV12 | OnPremises
+Aggregate, property, InvariantToNulls, System.Boolean?, SqlAzureV12 | OnPremises
+Aggregate, property, NullIfEmpty, System.Boolean?, SqlAzureV12 | OnPremises
+Aggregate, property, ClassName, String, All
+Aggregate, property, Format, Format, SqlAzureV12 | OnPremises
+Aggregate, property, MaxByteSize, System.Int32?, SqlAzureV12 | OnPremises
+Aggregate, relationship, ReturnType, Peer, SqlAzureV12 | OnPremises
+Aggregate, relationship, Assembly, Peer, All
+Aggregate, relationship, Parameters, Composing, All
+Aggregate, relationship, Schema, Hierarchical, All
+ApplicationRole, property, Password, String, SqlAzureV12 | OnPremises
+ApplicationRole, relationship, DefaultSchema, Peer, All
+Index, property, AllowPageLocks, Boolean, SqlAzureV12 | OnPremises
+Index, property, AllowRowLocks, Boolean, SqlAzureV12 | OnPremises
+Index, property, IgnoreDuplicateKey, Boolean, All
+Index, property, RecomputeStatistics, Boolean, All
+Index, property, IncrementalStatistics, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Index, property, Clustered, Boolean, All
+Index, property, Disabled, Boolean, All
+Index, property, FileStreamNull, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Index, property, WithPadIndex, Boolean, SqlAzureV12 | OnPremises
+Index, property, Unique, Boolean, All
+Index, property, FilterPredicate, SqlScriptProperty, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+Index, property, Hash, Boolean, All
+Index, property, BucketCount, System.Int32?, All
+Index, property, FillFactor, System.Int32?, SqlAzureV12 | OnPremises
+Index, relationship, Columns, Peer, All
+Index, relationship, BodyDependencies, Peer, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Index, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Index, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+Index, relationship, FileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Index, relationship, FileStreamPartitionScheme, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Index, relationship, IncludedColumns, Peer, All
+Index, relationship, IndexedObject, Hierarchical, All
+Index, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+Index, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+Assembly, property, Visible, Boolean, All
+Assembly, property, PermissionSet, AssemblyPermissionSet, All
+Assembly, relationship, AssemblySources, Composing, All
+Assembly, relationship, Authorizer, Peer, All
+Assembly, relationship, ReferencedAssemblies, Peer, All
+AssemblySource, property, Source, SqlScriptProperty, All
+AsymmetricKey, property, Password, String, OnPremises
+AsymmetricKey, property, EncryptedWithPassword, Boolean, OnPremises
+AsymmetricKey, property, Algorithm, AsymmetricKeyAlgorithm, OnPremises
+AsymmetricKey, property, CreationDisposition, SymmetricKeyCreationDisposition, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AsymmetricKey, property, ExecutableFile, String, OnPremises
+AsymmetricKey, property, File, String, OnPremises
+AsymmetricKey, property, ProviderKeyName, String, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AsymmetricKey, relationship, Assembly, Peer, OnPremises
+AsymmetricKey, relationship, Authorizer, Peer, All
+AsymmetricKey, relationship, Provider, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AuditAction, property, Action, DatabaseAuditAction, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AuditActionGroup, property, ActionGroup, AuditActionGroupType, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AuditActionSpecification, property, AuditsDatabase, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AuditActionSpecification, relationship, AuditActions, Composing, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AuditActionSpecification, relationship, Principals, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+AuditActionSpecification, relationship, SecuredObject, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+BrokerPriority, property, RemoteServiceName, String, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+BrokerPriority, property, PriorityLevel, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+BrokerPriority, relationship, ContractName, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+BrokerPriority, relationship, LocalServiceName, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DataType, property, UddtNullable, Boolean, All
+DataType, property, UddtIsMax, Boolean, All
+DataType, property, UddtLength, Int32, All
+DataType, property, UddtPrecision, Int32, All
+DataType, property, UddtScale, Int32, All
+DataType, property, SqlDataType, SqlDataType, All
+DataType, relationship, Schema, Hierarchical, All
+DataType, relationship, Type, Peer, All
+Certificate, property, ActiveForBeginDialog, Boolean, SqlAzureV12 | OnPremises
+Certificate, property, EncryptedWithPassword, Boolean, SqlAzureV12 | OnPremises
+Certificate, property, EncryptionPassword, String, SqlAzureV12 | OnPremises
+Certificate, property, ExpiryDate, String, SqlAzureV12 | OnPremises
+Certificate, property, StartDate, String, SqlAzureV12 | OnPremises
+Certificate, property, Subject, String, SqlAzureV12 | OnPremises
+Certificate, property, PrivateKeyFilePath, String, SqlAzureV12 | OnPremises
+Certificate, property, ExistingKeysFilePath, String, SqlAzureV12 | OnPremises
+Certificate, property, IsExistingKeyFileExecutable, Boolean, SqlAzureV12 | OnPremises
+Certificate, property, PrivateKeyDecryptionPassword, String, SqlAzureV12 | OnPremises
+Certificate, property, PrivateKeyEncryptionPassword, String, SqlAzureV12 | OnPremises
+Certificate, relationship, Authorizer, Peer, All
+Certificate, relationship, ExistingKeysAssembly, Peer, OnPremises
+CheckConstraint, property, Expression, SqlScriptProperty, All
+CheckConstraint, property, Disabled, Boolean, All
+CheckConstraint, property, NotForReplication, Boolean, SqlAzureV12 | OnPremises
+CheckConstraint, relationship, ExpressionDependencies, Peer, All
+CheckConstraint, relationship, Host, Hierarchical, All
+ClrTypeMethod, property, Name, String, All
+ClrTypeMethod, relationship, Parameters, Composing, All
+ClrTypeMethod, relationship, ReturnType, Composing, All
+ClrTypeMethodParameter, property, Name, String, All
+ClrTypeMethodParameter, property, IsOutput, Boolean, All
+ClrTypeMethodParameter, relationship, DataType, Peer, All
+ClrTypeProperty, property, Name, String, All
+ClrTypeProperty, relationship, ClrType, Peer, All
+ColumnStoreIndex, property, Disabled, Boolean, All
+ColumnStoreIndex, property, Clustered, Boolean, All
+ColumnStoreIndex, property, FilterPredicate, SqlScriptProperty, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ColumnStoreIndex, property, CompressionDelay, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ColumnStoreIndex, relationship, Columns, Peer, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+ColumnStoreIndex, relationship, BodyDependencies, Peer, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ColumnStoreIndex, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+ColumnStoreIndex, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+ColumnStoreIndex, relationship, IndexedObject, Hierarchical, All
+ColumnStoreIndex, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+ColumnStoreIndex, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+Contract, relationship, Messages, Peer, OnPremises
+Contract, relationship, Authorizer, Peer, All
+Credential, property, Identity, String, SqlAzureV12 | OnPremises
+Credential, property, Secret, String, SqlAzureV12 | OnPremises
+Credential, relationship, CryptographicProvider, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseCredential, property, Identity, String, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseCredential, property, Secret, String, SqlAzureV12 | Sql130 | Sql140 | Sql150
+CryptographicProvider, property, DllPath, String, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+CryptographicProvider, property, Enabled, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseAuditSpecification, property, WithState, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseAuditSpecification, relationship, AuditActionGroups, Composing, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseAuditSpecification, relationship, AuditActions, Composing, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseAuditSpecification, relationship, ServerAudit, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseDdlTrigger, property, AnsiNullsOn, System.Boolean?, All
+DatabaseDdlTrigger, property, ExecuteAsCaller, Boolean, All
+DatabaseDdlTrigger, property, Disabled, Boolean, All
+DatabaseDdlTrigger, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+DatabaseDdlTrigger, property, ExecuteAsOwner, Boolean, All
+DatabaseDdlTrigger, property, QuotedIdentifierOn, System.Boolean?, All
+DatabaseDdlTrigger, property, ExecuteAsSelf, Boolean, All
+DatabaseDdlTrigger, property, TriggerType, TriggerType, All
+DatabaseDdlTrigger, property, ClassName, String, All
+DatabaseDdlTrigger, property, MethodName, String, All
+DatabaseDdlTrigger, relationship, Assembly, Peer, All
+DatabaseDdlTrigger, relationship, BodyDependencies, Peer, All
+DatabaseDdlTrigger, relationship, EventGroup, Composing, All
+DatabaseDdlTrigger, relationship, EventType, Composing, All
+DatabaseDdlTrigger, relationship, Login, Peer, All
+DatabaseDdlTrigger, relationship, User, Peer, All
+DatabaseEncryptionKey, property, Algorithm, SymmetricKeyAlgorithm, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseEncryptionKey, relationship, Certificate, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseEncryptionKey, relationship, AsymmetricKey, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseEventNotification, property, WithFanIn, Boolean, OnPremises
+DatabaseEventNotification, property, BrokerService, String, OnPremises
+DatabaseEventNotification, property, BrokerInstanceSpecifier, String, OnPremises
+DatabaseEventNotification, relationship, EventGroup, Composing, OnPremises
+DatabaseEventNotification, relationship, EventType, Composing, OnPremises
+DatabaseMirroringLanguageSpecifier, property, WindowsAuthenticationMode, AuthenticationModes, OnPremises
+DatabaseMirroringLanguageSpecifier, property, UseCertificateFirst, Boolean, OnPremises
+DatabaseMirroringLanguageSpecifier, property, EncryptionAlgorithmPart1, ServiceBrokerEncryptionAlgorithm, OnPremises
+DatabaseMirroringLanguageSpecifier, property, EncryptionAlgorithmPart2, ServiceBrokerEncryptionAlgorithm, OnPremises
+DatabaseMirroringLanguageSpecifier, property, EncryptionMode, EncryptionMode, OnPremises
+DatabaseMirroringLanguageSpecifier, property, RoleType, DatabaseMirroringRole, OnPremises
+DatabaseMirroringLanguageSpecifier, relationship, AuthenticationCertificate, Peer, OnPremises
+DatabaseOptions, property, CompatibilityLevel, Int32, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AllowSnapshotIsolation, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AnsiNullDefaultOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AnsiNullsOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AnsiPaddingOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AnsiWarningsOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, ArithAbortOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AutoClose, Boolean, OnPremises
+DatabaseOptions, property, AutoCreateStatistics, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AutoCreateStatisticsIncremental, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, AutoShrink, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AutoUpdateStatisticsAsync, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, AutoUpdateStatistics, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, HonorBrokerPriority, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, ChangeTrackingAutoCleanup, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, ChangeTrackingEnabled, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, ConcatNullYieldsNull, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, CursorCloseOnCommit, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, CursorDefaultGlobalScope, Boolean, OnPremises
+DatabaseOptions, property, DateCorrelationOptimizationOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, DBChainingOn, Boolean, OnPremises
+DatabaseOptions, property, WithEncryption, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, FullTextEnabled, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, NestedTriggersOn, Boolean, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, NumericRoundAbortOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, DatabaseStateOffline, Boolean, OnPremises
+DatabaseOptions, property, QuotedIdentifierOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, TransactionIsolationReadCommittedSnapshot, Boolean, OnPremises
+DatabaseOptions, property, ReadOnly, Boolean, All
+DatabaseOptions, property, RecursiveTriggersOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, SupplementalLoggingOn, Boolean, OnPremises
+DatabaseOptions, property, TornPageProtectionOn, Boolean, OnPremises
+DatabaseOptions, property, TransformNoiseWords, Boolean, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, Trustworthy, Boolean, OnPremises
+DatabaseOptions, property, VardecimalStorageFormatOn, Boolean, SqlAzureV12 | OnPremises
+DatabaseOptions, property, UserAccessOption, UserAccessOption, OnPremises
+DatabaseOptions, property, DelayedDurabilityMode, DelayedDurabilityMode, Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, MemoryOptimizedElevateToSnapshot, Boolean, OnPremises
+DatabaseOptions, property, CatalogCollation, Microsoft.SqlServer.Dac.Model.CatalogCollation?, SqlAzureV12
+DatabaseOptions, property, ChangeTrackingRetentionPeriod, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, ChangeTrackingRetentionUnit, TimeUnit, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, Collation, String, All
+DatabaseOptions, property, Containment, Containment, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, DefaultFullTextLanguage, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, DefaultLanguage, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, FileStreamDirectoryName, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, LegacyCardinalityEstimation, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, LegacyCardinalityEstimationForSecondary, System.Boolean?, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, MaxDop, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, MaxDopForSecondary, System.Int32?, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, NonTransactedFileStreamAccess, NonTransactedFileStreamAccess, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, PageVerifyMode, PageVerifyMode, OnPremises
+DatabaseOptions, property, ParameterizationOption, ParameterizationOption, OnPremises
+DatabaseOptions, property, ParameterSniffing, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, ParameterSniffingForSecondary, System.Boolean?, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryOptimizerHotfixes, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryOptimizerHotfixesForSecondary, System.Boolean?, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreCaptureMode, QueryStoreCaptureMode, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreDesiredState, QueryStoreDesiredState, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreFlushInterval, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreIntervalLength, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreMaxPlansPerQuery, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreMaxStorageSize, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, QueryStoreStaleQueryThreshold, Int32, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, RecoveryMode, RecoveryMode, OnPremises
+DatabaseOptions, property, RemoteDataEnabled, Boolean, Sql130 | Sql140 | Sql150
+DatabaseOptions, property, ServiceBrokerOption, ServiceBrokerOption, OnPremises
+DatabaseOptions, property, TargetRecoveryTimePeriod, Int32, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, TargetRecoveryTimeUnit, TimeUnit, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, property, TemporalHistoryRetentionEnabled, Boolean, SqlAzureV12 | Sql140 | Sql150
+DatabaseOptions, property, TwoDigitYearCutoff, Int16, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, relationship, DefaultFilegroup, Peer, OnPremises
+DatabaseOptions, relationship, DefaultFileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+DatabaseOptions, relationship, GenericDatabaseScopedConfigurationOptions, Peer, SqlAzureV12 | Sql140 | Sql150
+DataCompressionOption, property, CompressionLevel, CompressionLevel, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DataCompressionOption, property, PartitionNumber, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Default, property, Expression, SqlScriptProperty, SqlAzureV12 | OnPremises
+Default, relationship, BoundObjects, Peer, SqlAzureV12 | OnPremises
+Default, relationship, Schema, Hierarchical, All
+DefaultConstraint, property, Expression, SqlScriptProperty, All
+DefaultConstraint, property, Disabled, Boolean, All
+DefaultConstraint, property, WithValues, Boolean, All
+DefaultConstraint, relationship, Host, Hierarchical, All
+DefaultConstraint, relationship, TargetColumn, Peer, All
+DefaultConstraint, relationship, ExpressionDependencies, Peer, All
+DmlTrigger, property, AnsiNullsOn, System.Boolean?, All
+DmlTrigger, property, ExecuteAsCaller, Boolean, All
+DmlTrigger, property, Disabled, Boolean, All
+DmlTrigger, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+DmlTrigger, property, NotForReplication, Boolean, SqlAzureV12 | OnPremises
+DmlTrigger, property, ExecuteAsOwner, Boolean, All
+DmlTrigger, property, QuotedIdentifierOn, System.Boolean?, All
+DmlTrigger, property, ExecuteAsSelf, Boolean, All
+DmlTrigger, property, WithAppend, Boolean, SqlAzureV12 | OnPremises
+DmlTrigger, property, TriggerType, TriggerType, All
+DmlTrigger, property, ClassName, String, All
+DmlTrigger, property, DeleteOrderRestriction, OrderRestriction, All
+DmlTrigger, property, InsertOrderRestriction, OrderRestriction, All
+DmlTrigger, property, IsDeleteTrigger, Boolean, All
+DmlTrigger, property, IsInsertTrigger, Boolean, All
+DmlTrigger, property, IsNativeCompiled, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DmlTrigger, property, IsSchemaBound, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+DmlTrigger, property, IsUpdateTrigger, Boolean, All
+DmlTrigger, property, MethodName, String, All
+DmlTrigger, property, UpdateOrderRestriction, OrderRestriction, All
+DmlTrigger, relationship, TriggerObject, Hierarchical, All
+DmlTrigger, relationship, Assembly, Peer, All
+DmlTrigger, relationship, BodyDependencies, Peer, All
+DmlTrigger, relationship, Login, Peer, All
+DmlTrigger, relationship, User, Peer, All
+Endpoint, property, Payload, Payload, OnPremises
+Endpoint, property, Protocol, Protocol, OnPremises
+Endpoint, property, State, State, OnPremises
+Endpoint, relationship, Authorizer, Peer, All
+Endpoint, relationship, PayloadSpecifier, Composing, OnPremises
+Endpoint, relationship, ProtocolSpecifier, Composing, OnPremises
+ErrorMessage, property, WithLog, Boolean, OnPremises
+ErrorMessage, property, Language, String, OnPremises
+ErrorMessage, property, MessageNumber, Int32, OnPremises
+ErrorMessage, property, MessageText, String, OnPremises
+ErrorMessage, property, Severity, Int32, OnPremises
+EventGroup, property, Group, EventGroupType, All
+EventSession, property, StartupState, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, TrackCausality, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, MaxDispatchLatency, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, MaxEventSizeUnit, MemoryUnit, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, MaxMemoryUnit, MemoryUnit, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, EventRetentionMode, EventRetentionMode, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, MaxEventSize, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, MaxMemory, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, MemoryPartitionMode, MemoryPartitionMode, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, property, SessionScope, EventSessionScope, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, relationship, EventDefinitions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSession, relationship, EventTargets, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, StartupState, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, TrackCausality, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, MaxDispatchLatency, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, MaxEventSizeUnit, MemoryUnit, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, MaxMemoryUnit, MemoryUnit, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, EventRetentionMode, EventRetentionMode, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, MaxEventSize, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, MaxMemory, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, MemoryPartitionMode, MemoryPartitionMode, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, property, SessionScope, EventSessionScope, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, relationship, EventDefinitions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+DatabaseEventSession, relationship, EventTargets, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionAction, property, ActionName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionAction, property, EventModuleGuid, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionAction, property, EventPackageName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionDefinitions, property, WhereExpression, SqlScriptProperty, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionDefinitions, property, EventModuleGuid, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionDefinitions, property, EventName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionDefinitions, property, EventPackageName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionDefinitions, relationship, Actions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionDefinitions, relationship, AttributeSettings, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionSetting, property, SettingValue, SqlScriptProperty, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionSetting, property, SettingName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionTarget, property, EventModuleGuid, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionTarget, property, EventPackageName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionTarget, property, TargetName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventSessionTarget, relationship, ParameterSettings, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+EventTypeSpecifier, property, EventType, EventType, All
+EventTypeSpecifier, property, Order, OrderRestriction, All
+ExtendedProcedure, property, ExeccuteAsCaller, Boolean, All
+ExtendedProcedure, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+ExtendedProcedure, property, ExecuteAsOwner, Boolean, All
+ExtendedProcedure, property, ExecuteAsSelf, Boolean, All
+ExtendedProcedure, relationship, Login, Peer, All
+ExtendedProcedure, relationship, Parameters, Composing, All
+ExtendedProcedure, relationship, Schema, Hierarchical, All
+ExtendedProcedure, relationship, User, Peer, All
+ExtendedProperty, property, Value, SqlScriptProperty, SqlAzureV12 | OnPremises
+ExtendedProperty, relationship, Host, Hierarchical, SqlAzureV12 | OnPremises
+ExternalDataSource, property, DatabaseName, String, SqlAzureV12
+ExternalDataSource, property, DataSourceType, DataSourceType, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ExternalDataSource, property, Location, String, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ExternalDataSource, property, ResourceManagerLocation, String, Sql130 | Sql140 | Sql150
+ExternalDataSource, property, ShardMapName, String, SqlAzureV12
+ExternalDataSource, relationship, Credential, Peer, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, DataCompression, String, Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, DateFormat, String, Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, FieldTerminator, String, Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, FormatType, FileFormatType, Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, SerDeMethod, String, Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, StringDelimiter, String, Sql130 | Sql140 | Sql150
+ExternalFileFormat, property, UseTypeDefault, Boolean, Sql130 | Sql140 | Sql150
+ExternalTable, property, DistributionPolicyType, Int32, SqlAzureV12
+ExternalTable, property, ExternalObjectName, String, SqlAzureV12
+ExternalTable, property, ExternalSchemaName, String, SqlAzureV12
+ExternalTable, property, IsAnsiNullsOn, System.Boolean?, All
+ExternalTable, property, IsFileStreamNull, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ExternalTable, property, IsQuotedIdentifierOn, System.Boolean?, All
+ExternalTable, property, IsTableLockOnBulkLoad, Boolean, All
+ExternalTable, property, Location, String, Sql130 | Sql140 | Sql150
+ExternalTable, property, LockEscalation, LockEscalationMethod, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+ExternalTable, property, RejectSampleValue, System.Double?, Sql130 | Sql140 | Sql150
+ExternalTable, property, RejectType, Microsoft.SqlServer.Dac.Model.RejectType?, Sql130 | Sql140 | Sql150
+ExternalTable, property, RejectValue, System.Double?, Sql130 | Sql140 | Sql150
+ExternalTable, relationship, Columns, Composing, All
+ExternalTable, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+ExternalTable, relationship, DataSourceName, Peer, SqlAzureV12 | Sql130 | Sql140 | Sql150
+ExternalTable, relationship, FileFormatName, Peer, Sql130 | Sql140 | Sql150
+ExternalTable, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+ExternalTable, relationship, FileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ExternalTable, relationship, FileStreamPartitionScheme, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ExternalTable, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+ExternalTable, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+ExternalTable, relationship, Schema, Hierarchical, All
+ExternalTable, relationship, ShardingColumn, Peer, SqlAzureV12
+SqlFile, property, Offline, Boolean, OnPremises
+SqlFile, property, Unlimited, Boolean, OnPremises
+SqlFile, property, FileGrowth, System.Int32?, OnPremises
+SqlFile, property, FileGrowthUnit, MemoryUnit, OnPremises
+SqlFile, property, FileName, String, OnPremises
+SqlFile, property, IsLogFile, Boolean, OnPremises
+SqlFile, property, MaxSize, System.Int32?, OnPremises
+SqlFile, property, MaxSizeUnit, MemoryUnit, OnPremises
+SqlFile, property, Size, System.Int32?, OnPremises
+SqlFile, property, SizeUnit, MemoryUnit, OnPremises
+SqlFile, relationship, Filegroup, Hierarchical, OnPremises
+Filegroup, property, ContainsFileStream, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Filegroup, property, ReadOnly, Boolean, OnPremises
+Filegroup, property, ContainsMemoryOptimizedData, Boolean, Sql120 | Sql130 | Sql140 | Sql150
+ForeignKeyConstraint, property, Disabled, Boolean, All
+ForeignKeyConstraint, property, NotForReplication, Boolean, SqlAzureV12 | OnPremises
+ForeignKeyConstraint, property, DeleteAction, ForeignKeyAction, All
+ForeignKeyConstraint, property, UpdateAction, ForeignKeyAction, All
+ForeignKeyConstraint, relationship, Host, Hierarchical, All
+ForeignKeyConstraint, relationship, Columns, Peer, All
+ForeignKeyConstraint, relationship, ForeignColumns, Peer, All
+ForeignKeyConstraint, relationship, ForeignTable, Peer, All
+FullTextCatalog, property, AccentSensitivity, System.Boolean?, All
+FullTextCatalog, property, IsDefault, Boolean, All
+FullTextCatalog, property, Path, String, All
+FullTextCatalog, relationship, Authorizer, Peer, All
+FullTextCatalog, relationship, Filegroup, Peer, All
+FullTextIndex, property, ChangeTracking, ChangeTrackingOption, SqlAzureV12 | OnPremises
+FullTextIndex, property, UseSystemStopList, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+FullTextIndex, property, Disabled, Boolean, SqlAzureV12 | OnPremises
+FullTextIndex, property, Replicated, Boolean, OnPremises
+FullTextIndex, property, StopListOff, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+FullTextIndex, relationship, UniqueIndexName, Peer, SqlAzureV12 | OnPremises
+FullTextIndex, relationship, Catalog, Peer, SqlAzureV12 | OnPremises
+FullTextIndex, relationship, Columns, Composing, SqlAzureV12 | OnPremises
+FullTextIndex, relationship, Filegroup, Peer, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+FullTextIndex, relationship, IndexedObject, Hierarchical, SqlAzureV12 | OnPremises
+FullTextIndex, relationship, SearchPropertyList, Peer, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FullTextIndex, relationship, StopList, Peer, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+FullTextIndexColumnSpecifier, property, PartOfStatisticalSemantics, Boolean, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FullTextIndexColumnSpecifier, property, LanguageId, System.Int32?, SqlAzureV12 | OnPremises
+FullTextIndexColumnSpecifier, relationship, Column, Peer, SqlAzureV12 | OnPremises
+FullTextIndexColumnSpecifier, relationship, TypeColumn, Peer, SqlAzureV12 | OnPremises
+FullTextStopList, relationship, Authorizer, Peer, All
+HttpProtocolSpecifier, property, CompressionEnabled, Boolean, Sql90 | Sql100
+HttpProtocolSpecifier, property, ListeningOnAllNoneReservedSites, Boolean, Sql90 | Sql100
+HttpProtocolSpecifier, property, ListeningOnAllSites, Boolean, Sql90 | Sql100
+HttpProtocolSpecifier, property, AuthenticationMode, AuthenticationModes, Sql90 | Sql100
+HttpProtocolSpecifier, property, AuthenticationRealm, String, Sql90 | Sql100
+HttpProtocolSpecifier, property, ClearPort, System.Int32?, Sql90 | Sql100
+HttpProtocolSpecifier, property, DefaultLogonDomain, String, Sql90 | Sql100
+HttpProtocolSpecifier, property, Path, String, Sql90 | Sql100
+HttpProtocolSpecifier, property, Ports, HttpPorts, Sql90 | Sql100
+HttpProtocolSpecifier, property, SslPort, System.Int32?, Sql90 | Sql100
+HttpProtocolSpecifier, property, Website, String, Sql90 | Sql100
+LinkedServer, property, CollationCompatible, Boolean, OnPremises
+LinkedServer, property, DataAccess, Boolean, OnPremises
+LinkedServer, property, LazySchemaValidationEnabled, Boolean, OnPremises
+LinkedServer, property, RemoteProcTransactionPromotionEnabled, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+LinkedServer, property, RpcEnabled, Boolean, OnPremises
+LinkedServer, property, RpcOutEnabled, Boolean, OnPremises
+LinkedServer, property, ProviderName, String, OnPremises
+LinkedServer, property, Catalog, String, OnPremises
+LinkedServer, property, CollationName, String, OnPremises
+LinkedServer, property, ConnectTimeout, Int32, OnPremises
+LinkedServer, property, DataSource, String, OnPremises
+LinkedServer, property, IsDistributor, Boolean, OnPremises
+LinkedServer, property, IsPublisher, Boolean, OnPremises
+LinkedServer, property, IsSubscriber, Boolean, OnPremises
+LinkedServer, property, Location, String, OnPremises
+LinkedServer, property, ProductName, String, OnPremises
+LinkedServer, property, ProviderString, String, OnPremises
+LinkedServer, property, QueryTimeout, Int32, OnPremises
+LinkedServer, property, UseRemoteCollation, Boolean, OnPremises
+LinkedServerLogin, property, UseSelf, Boolean, OnPremises
+LinkedServerLogin, property, LinkedServerLoginName, String, OnPremises
+LinkedServerLogin, property, LinkedServerPassword, String, OnPremises
+LinkedServerLogin, relationship, LinkedServer, Hierarchical, OnPremises
+LinkedServerLogin, relationship, LocalLogin, Peer, OnPremises
+Login, property, CheckExpiration, Boolean, OnPremises
+Login, property, CheckPolicy, Boolean, OnPremises
+Login, property, Disabled, Boolean, All
+Login, property, MappedToWindowsLogin, Boolean, OnPremises
+Login, property, PasswordHashed, Boolean, OnPremises
+Login, property, PasswordMustChange, Boolean, OnPremises
+Login, property, DefaultDatabase, String, OnPremises
+Login, property, DefaultLanguage, String, OnPremises
+Login, property, EncryptionOption, LoginEncryptionOption, OnPremises
+Login, property, Password, String, All
+Login, property, Sid, String, OnPremises
+Login, relationship, AsymmetricKey, Peer, OnPremises
+Login, relationship, Certificate, Peer, OnPremises
+Login, relationship, Credential, Peer, OnPremises
+MasterKey, property, Password, String, SqlAzureV12 | OnPremises
+MessageType, property, ValidationMethod, ValidationMethod, OnPremises
+MessageType, relationship, Authorizer, Peer, All
+MessageType, relationship, XmlSchemaCollection, Peer, OnPremises
+PartitionFunction, property, Range, PartitionRange, SqlAzureV12 | OnPremises
+PartitionFunction, relationship, ParameterType, Peer, SqlAzureV12 | OnPremises
+PartitionFunction, relationship, BoundaryValues, Composing, SqlAzureV12 | OnPremises
+PartitionScheme, property, AllToOneFilegroup, Boolean, SqlAzureV12 | OnPremises
+PartitionScheme, relationship, Filegroups, Peer, SqlAzureV12 | OnPremises
+PartitionScheme, relationship, PartitionFunction, Peer, SqlAzureV12 | OnPremises
+PartitionValue, property, Expression, SqlScriptProperty, SqlAzureV12 | OnPremises
+PartitionValue, relationship, ExpressionDependencies, Peer, SqlAzureV12 | OnPremises
+Permission, property, WithAllPrivileges, Boolean, All
+Permission, property, WithGrantOption, Boolean, All
+Permission, property, PermissionType, PermissionType, All
+Permission, property, PermissionAction, PermissionAction, All
+Permission, relationship, ExcludedColumns, Peer, All
+Permission, relationship, Grantee, Peer, All
+Permission, relationship, Grantor, Peer, All
+Permission, relationship, RevokedGrantOptionColumns, Peer, All
+Permission, relationship, SecuredObject, Hierarchical, All
+PrimaryKeyConstraint, property, AllowPageLocks, Boolean, SqlAzureV12 | OnPremises
+PrimaryKeyConstraint, property, AllowRowLocks, Boolean, SqlAzureV12 | OnPremises
+PrimaryKeyConstraint, property, IgnoreDuplicateKey, Boolean, All
+PrimaryKeyConstraint, property, RecomputeStatistics, Boolean, All
+PrimaryKeyConstraint, property, Clustered, Boolean, All
+PrimaryKeyConstraint, property, Disabled, Boolean, All
+PrimaryKeyConstraint, property, FileStreamNull, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+PrimaryKeyConstraint, property, WithPadIndex, Boolean, SqlAzureV12 | OnPremises
+PrimaryKeyConstraint, property, Hash, Boolean, All
+PrimaryKeyConstraint, property, BucketCount, System.Int32?, All
+PrimaryKeyConstraint, property, FillFactor, System.Int32?, SqlAzureV12 | OnPremises
+PrimaryKeyConstraint, relationship, Host, Hierarchical, All
+PrimaryKeyConstraint, relationship, Columns, Peer, All
+PrimaryKeyConstraint, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PrimaryKeyConstraint, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+PrimaryKeyConstraint, relationship, FileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+PrimaryKeyConstraint, relationship, FileStreamPartitionScheme, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+PrimaryKeyConstraint, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+PrimaryKeyConstraint, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+Procedure, property, AnsiNullsOn, System.Boolean?, All
+Procedure, property, ExecuteAsCaller, Boolean, All
+Procedure, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+Procedure, property, ForReplication, Boolean, OnPremises
+Procedure, property, ExecuteAsOwner, Boolean, All
+Procedure, property, QuotedIdentifierOn, System.Boolean?, All
+Procedure, property, WithRecompile, Boolean, All
+Procedure, property, ExecuteAsSelf, Boolean, All
+Procedure, property, WithNativeCompilation, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Procedure, property, WithSchemaBinding, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Procedure, property, ClassName, String, All
+Procedure, property, IsReplicated, Boolean, OnPremises
+Procedure, property, MethodName, String, All
+Procedure, relationship, ParentProcedure, Peer, SqlAzureV12 | OnPremises
+Procedure, relationship, Assembly, Peer, All
+Procedure, relationship, BodyDependencies, Peer, All
+Procedure, relationship, Login, Peer, All
+Procedure, relationship, Parameters, Composing, All
+Procedure, relationship, Schema, Hierarchical, All
+Procedure, relationship, User, Peer, All
+Queue, property, ActivationStatusOn, System.Boolean?, OnPremises
+Queue, property, ActivationExecuteAsCaller, Boolean, All
+Queue, property, ActivationExecuteAsOwner, Boolean, All
+Queue, property, PoisonMessageHandlingStatusOn, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Queue, property, RetentionOn, Boolean, OnPremises
+Queue, property, ActivationExecuteAsSelf, Boolean, All
+Queue, property, StatusOn, Boolean, OnPremises
+Queue, property, ActivationMaxQueueReaders, System.Int32?, OnPremises
+Queue, relationship, ActivationProcedure, Peer, OnPremises
+Queue, relationship, Columns, Composing, All
+Queue, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+Queue, relationship, Login, Peer, All
+Queue, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+Queue, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+Queue, relationship, Schema, Hierarchical, All
+Queue, relationship, User, Peer, All
+QueueEventNotification, property, WithFanIn, Boolean, OnPremises
+QueueEventNotification, property, BrokerService, String, OnPremises
+QueueEventNotification, property, BrokerInstanceSpecifier, String, OnPremises
+QueueEventNotification, relationship, EventGroup, Composing, OnPremises
+QueueEventNotification, relationship, EventType, Composing, OnPremises
+QueueEventNotification, relationship, Queue, Peer, OnPremises
+RemoteServiceBinding, property, Anonymous, Boolean, OnPremises
+RemoteServiceBinding, property, Service, String, OnPremises
+RemoteServiceBinding, relationship, User, Peer, OnPremises
+RemoteServiceBinding, relationship, Authorizer, Peer, All
+ResourceGovernor, property, Enabled, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ResourceGovernor, relationship, ClassifierFunction, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, CapCpuPercent, Int32, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, MaxCpuPercent, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, MaxIopsPerVolume, Int32, Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, MaxMemoryPercent, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, MinCpuPercent, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, MinIopsPerVolume, Int32, Sql120 | Sql130 | Sql140 | Sql150
+ResourcePool, property, MinMemoryPercent, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Role, relationship, Authorizer, Peer, All
+RoleMembership, relationship, Member, Peer, All
+RoleMembership, relationship, Role, Hierarchical, All
+Route, property, BrokerInstance, String, OnPremises
+Route, property, ServiceName, String, OnPremises
+Route, property, Address, String, OnPremises
+Route, property, Lifetime, System.Int32?, OnPremises
+Route, property, MirrorAddress, String, OnPremises
+Route, relationship, Authorizer, Peer, All
+Rule, property, Expression, SqlScriptProperty, SqlAzureV12 | OnPremises
+Rule, relationship, BoundObjects, Peer, SqlAzureV12 | OnPremises
+Rule, relationship, Schema, Hierarchical, All
+Schema, relationship, Authorizer, Peer, All
+SearchProperty, property, Description, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+SearchProperty, property, Identifier, Int32, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+SearchProperty, property, PropertySetGuid, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+SearchProperty, relationship, SearchPropertyList, Hierarchical, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+SearchPropertyList, relationship, Authorizer, Peer, All
+SecurityPolicy, property, Enabled, Boolean, All
+SecurityPolicy, property, IsSchemaBound, Boolean, All
+SecurityPolicy, property, NotForReplication, Boolean, All
+SecurityPolicy, relationship, Predicates, Composing, All
+SecurityPolicy, relationship, Schema, Hierarchical, All
+SecurityPredicate, property, BodyScript, SqlScriptProperty, All
+SecurityPredicate, property, Operation, SecurityPredicateOperation, All
+SecurityPredicate, property, PredicateType, SecurityPredicateType, All
+SecurityPredicate, relationship, BodyDependencies, Peer, All
+SecurityPredicate, relationship, TargetObject, Peer, All
+Sequence, property, NoMaxValue, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, NoMinValue, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, IncrementValue, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, CacheSize, System.Int32?, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, IsCached, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, IsCycling, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, MaxValue, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, MinValue, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, property, StartValue, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, relationship, DataType, Peer, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Sequence, relationship, Schema, Hierarchical, All
+ServerAudit, property, Disabled, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, ReserveDiskSpace, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, UnlimitedFileSize, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, UnlimitedMaxRolloverFiles, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, OnFailure, FailureAction, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, PredicateExpression, SqlScriptProperty, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, AuditGuid, String, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, AuditTarget, AuditTarget, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, FilePath, String, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, MaxFiles, System.Int32?, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, MaxRolloverFiles, System.Int32?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, MaxSize, System.Int32?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, MaxSizeUnit, MemoryUnit, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAudit, property, QueueDelay, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAuditSpecification, property, StateOn, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAuditSpecification, relationship, AuditActionGroups, Composing, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerAuditSpecification, relationship, ServerAudit, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+ServerDdlTrigger, property, AnsiNullsOn, System.Boolean?, All
+ServerDdlTrigger, property, ExecuteAsCaller, Boolean, All
+ServerDdlTrigger, property, Disabled, Boolean, All
+ServerDdlTrigger, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+ServerDdlTrigger, property, ExecuteAsOwner, Boolean, All
+ServerDdlTrigger, property, QuotedIdentifierOn, System.Boolean?, All
+ServerDdlTrigger, property, ExecuteAsSelf, Boolean, All
+ServerDdlTrigger, property, TriggerType, TriggerType, All
+ServerDdlTrigger, property, ClassName, String, All
+ServerDdlTrigger, property, IsLogon, Boolean, OnPremises
+ServerDdlTrigger, property, MethodName, String, All
+ServerDdlTrigger, relationship, Assembly, Peer, All
+ServerDdlTrigger, relationship, BodyDependencies, Peer, All
+ServerDdlTrigger, relationship, EventGroup, Composing, All
+ServerDdlTrigger, relationship, EventType, Composing, All
+ServerDdlTrigger, relationship, Login, Peer, All
+ServerDdlTrigger, relationship, User, Peer, All
+ServerEventNotification, property, WithFanIn, Boolean, OnPremises
+ServerEventNotification, property, BrokerService, String, OnPremises
+ServerEventNotification, property, BrokerInstanceSpecifier, String, OnPremises
+ServerEventNotification, relationship, EventGroup, Composing, OnPremises
+ServerEventNotification, relationship, EventType, Composing, OnPremises
+ServerRoleMembership, relationship, Member, Peer, All
+ServerRoleMembership, relationship, Role, Hierarchical, All
+Service, property, UseDefaultContract, Boolean, OnPremises
+Service, relationship, Authorizer, Peer, All
+Service, relationship, Contracts, Peer, OnPremises
+Service, relationship, Queue, Peer, OnPremises
+ServiceBrokerLanguageSpecifier, property, WindowsAuthenticationMode, AuthenticationModes, OnPremises
+ServiceBrokerLanguageSpecifier, property, UseCertificateFirst, Boolean, OnPremises
+ServiceBrokerLanguageSpecifier, property, MessageForwardingEnabled, Boolean, OnPremises
+ServiceBrokerLanguageSpecifier, property, EncryptionAlgorithmPart1, ServiceBrokerEncryptionAlgorithm, OnPremises
+ServiceBrokerLanguageSpecifier, property, EncryptionAlgorithmPart2, ServiceBrokerEncryptionAlgorithm, OnPremises
+ServiceBrokerLanguageSpecifier, property, EncryptionMode, EncryptionMode, OnPremises
+ServiceBrokerLanguageSpecifier, property, MessageForwardSize, Int32, OnPremises
+ServiceBrokerLanguageSpecifier, relationship, AuthenticationCertificate, Peer, OnPremises
+Signature, property, IsCounterSignature, Boolean, OnPremises
+Signature, relationship, EncryptionMechanism, Composing, OnPremises
+Signature, relationship, SignedObject, Hierarchical, OnPremises
+SignatureEncryptionMechanism, property, Password, String, OnPremises
+SignatureEncryptionMechanism, property, SignedBlob, String, OnPremises
+SignatureEncryptionMechanism, relationship, AsymmetricKey, Peer, OnPremises
+SignatureEncryptionMechanism, relationship, Certificate, Peer, OnPremises
+SoapLanguageSpecifier, property, BatchesEnabled, Boolean, Sql90 | Sql100
+SoapLanguageSpecifier, property, SessionsEnabled, Boolean, Sql90 | Sql100
+SoapLanguageSpecifier, property, SessionTimeoutNever, Boolean, Sql90 | Sql100
+SoapLanguageSpecifier, property, CharacterSet, CharacterSet, Sql90 | Sql100
+SoapLanguageSpecifier, property, DatabaseName, String, Sql90 | Sql100
+SoapLanguageSpecifier, property, HeaderLimit, Int32, Sql90 | Sql100
+SoapLanguageSpecifier, property, IsDefaultDatabase, Boolean, Sql90 | Sql100
+SoapLanguageSpecifier, property, IsDefaultNamespace, Boolean, Sql90 | Sql100
+SoapLanguageSpecifier, property, IsDefaultWsdlSpName, Boolean, Sql90 | Sql100
+SoapLanguageSpecifier, property, LoginType, SoapLoginType, Sql90 | Sql100
+SoapLanguageSpecifier, property, Namespace, String, Sql90 | Sql100
+SoapLanguageSpecifier, property, SchemaType, SoapSchema, Sql90 | Sql100
+SoapLanguageSpecifier, property, SessionTimeout, Int32, Sql90 | Sql100
+SoapLanguageSpecifier, property, WsdlSpName, String, Sql90 | Sql100
+SoapLanguageSpecifier, relationship, WebMethods, Composing, Sql90 | Sql100
+SoapMethodSpecification, property, SchemaType, SoapSchema, Sql90 | Sql100
+SoapMethodSpecification, property, Format, SoapFormat, Sql90 | Sql100
+SoapMethodSpecification, property, WebMethodAlias, String, Sql90 | Sql100
+SoapMethodSpecification, property, WebMethodNamespace, String, Sql90 | Sql100
+SoapMethodSpecification, relationship, RelatedMethod, Peer, Sql90 | Sql100
+SpatialIndex, property, AllowPageLocks, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SpatialIndex, property, AllowRowLocks, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SpatialIndex, property, IgnoreDuplicateKey, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, RecomputeStatistics, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, GridLevel1Density, Degree, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, GridLevel2Density, Degree, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, GridLevel3Density, Degree, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, GridLevel4Density, Degree, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, Disabled, Boolean, All
+SpatialIndex, property, WithPadIndex, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SpatialIndex, property, CellsPerObject, System.Int32?, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, DataCompression, CompressionLevel, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SpatialIndex, property, FillFactor, Int32, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SpatialIndex, property, Tessellation, Tessellation, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, XMax, System.Double?, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, XMin, System.Double?, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, YMax, System.Double?, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, property, YMin, System.Double?, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, relationship, Column, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+SpatialIndex, relationship, IndexedObject, Hierarchical, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+SpatialIndex, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+SpatialIndex, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+Statistics, property, StatsStream, String, All
+Statistics, property, FilterPredicate, SqlScriptProperty, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+Statistics, property, Incremental, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Statistics, property, NoRecompute, Boolean, All
+Statistics, property, SampleSize, Int32, All
+Statistics, property, SamplingStyle, SamplingStyle, All
+Statistics, relationship, OnObject, Hierarchical, All
+Statistics, relationship, Columns, Peer, All
+Statistics, relationship, ExpressionDependencies, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+Parameter, property, DefaultExpression, SqlScriptProperty, All
+Parameter, property, ReadOnly, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+Parameter, property, Varying, Boolean, All
+Parameter, property, Scale, Int32, All
+Parameter, property, Precision, Int32, All
+Parameter, property, Length, Int32, All
+Parameter, property, IsMax, Boolean, All
+Parameter, property, XmlStyle, XmlStyle, All
+Parameter, property, IsNullable, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+Parameter, property, IsOutput, Boolean, All
+Parameter, relationship, XmlSchemaCollection, Peer, All
+Parameter, relationship, DataType, Peer, All
+SymmetricKey, property, Algorithm, SymmetricKeyAlgorithm, SqlAzureV12 | OnPremises
+SymmetricKey, property, CreationDisposition, SymmetricKeyCreationDisposition, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+SymmetricKey, property, IdentityValue, String, SqlAzureV12 | OnPremises
+SymmetricKey, property, KeySource, String, SqlAzureV12 | OnPremises
+SymmetricKey, property, ProviderKeyName, String, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SymmetricKey, relationship, AsymmetricKeys, Peer, OnPremises
+SymmetricKey, relationship, Certificates, Peer, SqlAzureV12 | OnPremises
+SymmetricKey, relationship, Passwords, Composing, SqlAzureV12 | OnPremises
+SymmetricKey, relationship, SymmetricKeys, Peer, SqlAzureV12 | OnPremises
+SymmetricKey, relationship, Authorizer, Peer, All
+SymmetricKey, relationship, Provider, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+SymmetricKeyPassword, property, Password, String, SqlAzureV12 | OnPremises
+Synonym, property, ForObjectName, SqlScriptProperty, All
+Synonym, relationship, ForObject, Peer, All
+Synonym, relationship, Schema, Hierarchical, All
+Table, property, AnsiNullsOn, System.Boolean?, All
+Table, property, ChangeDataCaptureEnabled, Boolean, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Table, property, ChangeTrackingEnabled, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Table, property, FileStreamNull, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Table, property, LargeValueTypesOutOfRow, Boolean, All
+Table, property, QuotedIdentifierOn, System.Boolean?, All
+Table, property, TableLockOnBulkLoad, Boolean, All
+Table, property, TrackColumnsUpdated, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Table, property, VardecimalStorageFormatEnabled, Boolean, SqlAzureV12 | OnPremises
+Table, property, MemoryOptimized, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Table, property, RowCount, System.Int64?, All
+Table, property, DataSize, System.Double?, All
+Table, property, IndexSize, System.Double?, All
+Table, property, DataPages, System.Int64?, All
+Table, property, UsedPages, System.Int64?, All
+Table, property, Durability, Durability, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Table, property, IsAutoGeneratedHistoryTable, Boolean, All
+Table, property, IsEdge, Boolean, SqlAzureV12 | Sql140 | Sql150
+Table, property, IsNode, Boolean, SqlAzureV12 | Sql140 | Sql150
+Table, property, IsReplicated, Boolean, OnPremises
+Table, property, LockEscalation, LockEscalationMethod, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+Table, property, RemoteDataEnabled, Boolean, Sql130 | Sql140 | Sql150
+Table, property, RetentionUnit, Int32, SqlAzureV12 | Sql140 | Sql150
+Table, property, RetentionValue, Int32, SqlAzureV12 | Sql140 | Sql150
+Table, property, TextInRowSize, Int32, All
+Table, relationship, Columns, Composing, All
+Table, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+Table, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+Table, relationship, FilegroupForTextImage, Peer, OnPremises
+Table, relationship, FileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Table, relationship, FileStreamPartitionScheme, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+Table, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+Table, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+Table, relationship, Schema, Hierarchical, All
+Table, relationship, TemporalSystemVersioningHistoryTable, Peer, SqlAzureV12 | Sql130 | Sql140 | Sql150
+FileTable, property, AnsiNullsOn, System.Boolean?, All
+FileTable, property, FileStreamNull, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FileTable, property, QuotedIdentifierOn, System.Boolean?, All
+FileTable, property, TableLockOnBulkLoad, Boolean, All
+FileTable, property, FileTableNamespaceEnabled, Boolean, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FileTable, property, FileTableCollateFilename, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FileTable, property, FileTableDirectory, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FileTable, property, LockEscalation, LockEscalationMethod, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+FileTable, relationship, Columns, Composing, All
+FileTable, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+FileTable, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+FileTable, relationship, FileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FileTable, relationship, FileStreamPartitionScheme, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+FileTable, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+FileTable, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+FileTable, relationship, Schema, Hierarchical, All
+TableType, property, MemoryOptimized, Boolean, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+TableType, relationship, Columns, Composing, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableType, relationship, Constraints, Composing, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableType, relationship, Indexes, Composing, Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+TableType, relationship, Schema, Hierarchical, All
+TableTypeCheckConstraint, property, Expression, SqlScriptProperty, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeCheckConstraint, relationship, ExpressionDependencies, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, Collation, String, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, IdentityIncrement, String, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, IdentitySeed, String, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, IsIdentity, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, Nullable, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, IsRowGuidCol, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, Expression, SqlScriptProperty, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, Persisted, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, PersistedNullable, System.Boolean?, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, property, Scale, Int32, All
+TableTypeColumn, property, Precision, Int32, All
+TableTypeColumn, property, Length, Int32, All
+TableTypeColumn, property, IsMax, Boolean, All
+TableTypeColumn, property, XmlStyle, XmlStyle, All
+TableTypeColumn, relationship, ExpressionDependencies, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, relationship, XmlSchemaCollection, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeColumn, relationship, DataType, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeDefaultConstraint, property, Expression, SqlScriptProperty, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeDefaultConstraint, relationship, TargetColumn, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeDefaultConstraint, relationship, ExpressionDependencies, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeIndex, property, Hash, Boolean, All
+TableTypeIndex, property, BucketCount, System.Int32?, All
+TableTypeIndex, property, IsDisabled, Boolean, All
+TableTypeIndex, property, IsUnique, Boolean, SqlAzureV12 | Sql130 | Sql140 | Sql150
+TableTypeIndex, relationship, Columns, Peer, All
+TableTypePrimaryKeyConstraint, property, IgnoreDuplicateKey, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypePrimaryKeyConstraint, property, Clustered, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypePrimaryKeyConstraint, property, Hash, Boolean, All
+TableTypePrimaryKeyConstraint, property, BucketCount, System.Int32?, All
+TableTypePrimaryKeyConstraint, relationship, Columns, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeUniqueConstraint, property, IgnoreDuplicateKey, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeUniqueConstraint, property, Clustered, Boolean, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TableTypeUniqueConstraint, property, Hash, Boolean, All
+TableTypeUniqueConstraint, property, BucketCount, System.Int32?, All
+TableTypeUniqueConstraint, relationship, Columns, Peer, Sql100 | Sql110 | Sql120 | Cloud | Sql130 | Sql140 | Sql150
+TcpProtocolSpecifier, property, ListeningOnAllIPs, Boolean, OnPremises
+TcpProtocolSpecifier, property, ListenerIPv4, String, OnPremises
+TcpProtocolSpecifier, property, ListenerIPv6, String, OnPremises
+TcpProtocolSpecifier, property, ListenerPort, Int32, OnPremises
+UniqueConstraint, property, AllowPageLocks, Boolean, SqlAzureV12 | OnPremises
+UniqueConstraint, property, AllowRowLocks, Boolean, SqlAzureV12 | OnPremises
+UniqueConstraint, property, IgnoreDuplicateKey, Boolean, All
+UniqueConstraint, property, RecomputeStatistics, Boolean, All
+UniqueConstraint, property, Clustered, Boolean, All
+UniqueConstraint, property, Disabled, Boolean, All
+UniqueConstraint, property, FileStreamNull, System.Boolean?, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+UniqueConstraint, property, WithPadIndex, Boolean, SqlAzureV12 | OnPremises
+UniqueConstraint, property, Hash, Boolean, All
+UniqueConstraint, property, BucketCount, System.Int32?, All
+UniqueConstraint, property, FillFactor, System.Int32?, SqlAzureV12 | OnPremises
+UniqueConstraint, relationship, Host, Hierarchical, All
+UniqueConstraint, relationship, Columns, Peer, All
+UniqueConstraint, relationship, DataCompressionOptions, Composing, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+UniqueConstraint, relationship, Filegroup, Peer, SqlAzureV12 | OnPremises
+UniqueConstraint, relationship, FileStreamFilegroup, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+UniqueConstraint, relationship, FileStreamPartitionScheme, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+UniqueConstraint, relationship, PartitionColumn, Peer, SqlAzureV12 | OnPremises
+UniqueConstraint, relationship, PartitionScheme, Peer, SqlAzureV12 | OnPremises
+User, property, WithoutLogin, Boolean, All
+User, property, AuthenticationType, AuthenticationType, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+User, property, DefaultLanguage, String, Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+User, property, Password, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+User, property, Sid, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+User, property, UserType, UserType, SqlAzureV12
+User, relationship, AsymmetricKey, Peer, OnPremises
+User, relationship, Certificate, Peer, OnPremises
+User, relationship, DefaultSchema, Peer, All
+User, relationship, Login, Peer, All
+UserDefinedServerRole, relationship, Authorizer, Peer, All
+UserDefinedType, property, ByteOrdered, System.Boolean?, All
+UserDefinedType, property, FixedLength, System.Boolean?, All
+UserDefinedType, property, ClassName, String, All
+UserDefinedType, property, Format, Format, All
+UserDefinedType, property, MaxByteSize, System.Int32?, All
+UserDefinedType, property, ValidationMethodName, String, All
+UserDefinedType, relationship, Assembly, Peer, All
+UserDefinedType, relationship, Methods, Composing, All
+UserDefinedType, relationship, Properties, Composing, All
+UserDefinedType, relationship, Schema, Hierarchical, All
+View, property, AnsiNullsOn, System.Boolean?, All
+View, property, WithEncryption, Boolean, SqlAzureV12 | OnPremises
+View, property, WithViewMetadata, Boolean, All
+View, property, QuotedIdentifierOn, System.Boolean?, All
+View, property, Replicated, Boolean, OnPremises
+View, property, WithSchemaBinding, Boolean, All
+View, property, WithCheckOption, Boolean, All
+View, property, SelectStatement, SqlScriptProperty, All
+View, relationship, BodyDependencies, Peer, All
+View, relationship, Columns, Composing, All
+View, relationship, Schema, Hierarchical, All
+WorkloadGroup, property, GroupMaxRequests, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+WorkloadGroup, property, Importance, Degree, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+WorkloadGroup, property, MaxDop, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+WorkloadGroup, property, RequestMaxCpuTimeSec, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+WorkloadGroup, property, RequestMaxMemoryGrantPercent, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+WorkloadGroup, property, RequestMemoryGrantTimeoutSec, Int32, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+WorkloadGroup, relationship, ResourcePool, Peer, Sql100 | Sql110 | Sql120 | Sql130 | Sql140 | Sql150
+XmlIndex, property, AllowPageLocks, Boolean, SqlAzureV12 | OnPremises
+XmlIndex, property, AllowRowLocks, Boolean, SqlAzureV12 | OnPremises
+XmlIndex, property, IgnoreDuplicateKey, Boolean, Sql100 | Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+XmlIndex, property, RecomputeStatistics, Boolean, SqlAzureV12 | OnPremises
+XmlIndex, property, Disabled, Boolean, All
+XmlIndex, property, WithPadIndex, Boolean, SqlAzureV12 | OnPremises
+XmlIndex, property, SecondaryXmlIndexType, SecondaryXmlIndexType, SqlAzureV12 | OnPremises
+XmlIndex, property, FillFactor, System.Int32?, SqlAzureV12 | OnPremises
+XmlIndex, property, IsPrimary, Boolean, SqlAzureV12 | OnPremises
+XmlIndex, relationship, PrimaryXmlIndex, Peer, SqlAzureV12 | OnPremises
+XmlIndex, relationship, Column, Peer, SqlAzureV12 | OnPremises
+XmlIndex, relationship, IndexedObject, Hierarchical, SqlAzureV12 | OnPremises
+SelectiveXmlIndex, property, Disabled, Boolean, All
+SelectiveXmlIndex, property, WithPadIndex, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, property, AllowRowLocks, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, property, AllowPageLocks, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, property, IgnoreDuplicateKey, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, property, RecomputeStatistics, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, property, FillFactor, System.Int32?, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, property, IsPrimary, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, relationship, PrimarySelectiveXmlIndex, Peer, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, relationship, PrimaryPromotedPath, Peer, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, relationship, Column, Peer, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, relationship, IndexedObject, Hierarchical, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, relationship, PromotedPaths, Composing, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+SelectiveXmlIndex, relationship, XmlNamespaces, Composing, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+XmlNamespace, property, NamespaceUri, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+XmlNamespace, property, Prefix, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForXQueryType, property, IsSingleton, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForXQueryType, property, MaxLength, System.Int32?, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForXQueryType, property, NodePath, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForXQueryType, property, Type, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForSqlType, property, Scale, Int32, All
+PromotedNodePathForSqlType, property, Precision, Int32, All
+PromotedNodePathForSqlType, property, Length, Int32, All
+PromotedNodePathForSqlType, property, IsMax, Boolean, All
+PromotedNodePathForSqlType, property, IsSingleton, Boolean, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForSqlType, property, NodePath, String, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+PromotedNodePathForSqlType, relationship, DataType, Peer, Sql110 | Sql120 | SqlAzureV12 | Sql130 | Sql140 | Sql150
+XmlSchemaCollection, property, Expression, SqlScriptProperty, SqlAzureV12 | OnPremises
+XmlSchemaCollection, relationship, Schema, Hierarchical, All

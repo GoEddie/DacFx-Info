@@ -1,0 +1,1260 @@
+Type, Property or Relationship, Name, Type, Platform, Relationship Type
+SqlAggregate, childRelationship, SqlTypeSpecifierBase, ReturnType,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlAggregate, childRelationship, SqlSubroutineParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlAggregate, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlAggregate, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlAggregate, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlAggregate, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlAggregate, property, int, Format, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlAggregate, property, bool?, IsInvariantToDuplicates, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlAggregate, property, bool?, IsInvariantToNulls, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlAggregate, property, bool?, IsNullIfEmpty, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlAggregate, property, int?, MaxByteSize, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlAggregate, property, string, ClassName, SqlPlatforms.All,
+SqlApplicationRole, childRelationship, SqlSchema, DefaultSchema,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlApplicationRole, parentRelationship, SqlRoleMembership, RoleMemberships,  SqlPlatforms.All
+SqlApplicationRole, parentRelationship, SqlPermissionStatement, GrantedPermissions,  SqlPlatforms.All
+SqlApplicationRole, parentRelationship, ISqlAuthorizedObject, AuthorizedObjects,  SqlPlatforms.All
+SqlApplicationRole, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlApplicationRole, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlApplicationRole, property, string, Password, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlAssembly, childRelationship, SqlAssemblySource, AssemblySources,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlAssembly, childRelationship, SqlAssembly, ReferencedAssemblies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlAssembly, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlAssembly, parentRelationship, SqlAssemblyFile, Files,  SqlPlatforms.All
+SqlAssembly, parentRelationship, ISqlClrClassDefined, ClrObjects,  SqlPlatforms.All
+SqlAssembly, parentRelationship, SqlAsymmetricKey, AsymmetricKeys,  SqlPlatforms.OnPremises
+SqlAssembly, parentRelationship, SqlCertificate, Certificates,  SqlPlatforms.OnPremises
+SqlAssembly, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlAssembly, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlAssembly, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlAssembly, property, int, PermissionSet, SqlPlatforms.All,
+SqlAssembly, property, bool, IsVisible, SqlPlatforms.All,
+SqlAssemblyFile, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlAssemblyFile, externalProperty, SqlScriptProperty, Source,  SqlPlatforms.All
+SqlAssemblySource, externalProperty, SqlScriptProperty, Source,  SqlPlatforms.All
+SqlAsymmetricKey, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlAsymmetricKey, childRelationship, SqlCryptographicProvider, Provider,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlAsymmetricKey, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlAsymmetricKey, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlAsymmetricKey, property, string, File, SqlPlatforms.OnPremises,
+SqlAsymmetricKey, property, string, ExecutableFile, SqlPlatforms.OnPremises,
+SqlAsymmetricKey, property, int, Algorithm, SqlPlatforms.OnPremises,
+SqlAsymmetricKey, property, string, EncryptionPassword, SqlPlatforms.OnPremises,
+SqlAsymmetricKey, property, bool, IsEncryptedWithPassword, SqlPlatforms.OnPremises,
+SqlAsymmetricKey, property, string, ProviderKeyName, SqlPlatforms.Sql100AndUp,
+SqlAsymmetricKey, property, int, CreationDisposition, SqlPlatforms.Sql100AndUp,
+SqlAuditAction, property, int, AuditAction, SqlPlatforms.Sql100AndUp,
+SqlAuditActionGroup, property, int, AuditActionGroup, SqlPlatforms.Sql100AndUp,
+SqlAuditActionSpecification, childRelationship, SqlAuditAction, AuditActions,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Composing
+SqlAuditActionSpecification, childRelationship, SqlDatabaseSecurityPrincipal, Principals,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlAuditActionSpecification, childRelationship, ISqlSecurable, SecuredObject,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlAuditActionSpecification, property, bool, AuditsDatabase, SqlPlatforms.Sql100AndUp,
+SqlBrokerPriority, childRelationship, SqlContract, Contract,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlBrokerPriority, childRelationship, SqlService, LocalService,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlBrokerPriority, property, string, RemoteService, SqlPlatforms.Sql100AndUp,
+SqlBrokerPriority, property, int, PriorityLevel, SqlPlatforms.Sql100AndUp,
+SqlBuiltInServerRole, parentRelationship, SqlServerRoleMembership, Memberships,  SqlPlatforms.All
+SqlBuiltInServerRole, parentRelationship, ISqlServerAuthorizedObject, AuthorizedObjects,  SqlPlatforms.All
+SqlBuiltInType, property, int, SqlDataType, SqlPlatforms.All,
+SqlCertificate, childRelationship, SqlAssembly, ExistingKeysAssembly,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlCertificate, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlCertificate, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlCertificate, property, bool, IsEncryptedWithPassword, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, ExistingKeysFilePath, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, bool, IsExistingKeyFileExecutable, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, PrivateKeyFile, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, PrivateKeyDecryptionPassword, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, PrivateKeyEncryptionPassword, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, NewKeyEncryptionPassword, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, NewKeySubject, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, NewKeyStartDate, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, string, NewKeyExpireDate, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCertificate, property, bool, IsActiveForBeginDialog, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCheckConstraint, childRelationship, ISqlModelElement, CheckExpressionDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlCheckConstraint, childRelationship, ISqlSpecifiesTable, DefiningTable,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlCheckConstraint, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlCheckConstraint, property, bool, IsNotForReplication, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCheckConstraint, property, bool, IsDisabled, SqlPlatforms.All,
+SqlCheckConstraint, externalProperty, SqlScriptProperty, CheckExpressionScript,  SqlPlatforms.All
+SqlClrFunctionImplementation, childRelationship, SqlClrFunctionOrderedColumnSpecification, OrderColumns,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlClrFunctionImplementation, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlClrFunctionImplementation, parentRelationship, SqlFunction, Parent,  SqlPlatforms.All
+SqlClrFunctionImplementation, property, bool?, IsDeterministic, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlClrFunctionImplementation, property, int?, DataAccess, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlClrFunctionImplementation, property, int?, SystemDataAccess, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlClrFunctionImplementation, property, bool?, IsPrecise, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlClrFunctionImplementation, property, string, FillRowMethodName, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlClrFunctionImplementation, property, string, MethodName, SqlPlatforms.All,
+SqlClrFunctionImplementation, property, string, ClassName, SqlPlatforms.All,
+SqlClrFunctionOrderedColumnSpecification, childRelationship, SqlColumn, Column,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlClrFunctionOrderedColumnSpecification, property, bool, IsAscending, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlClrMethod, childRelationship, SqlTypeSpecifierBase, ReturnType,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlClrMethod, childRelationship, SqlClrMethodParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlClrMethod, property, string, ClrName, SqlPlatforms.All,
+SqlClrMethodParameter, childRelationship, SqlTypeSpecifierBase, Type,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlClrMethodParameter, property, string, ClrName, SqlPlatforms.All,
+SqlClrMethodParameter, property, bool, IsOutput, SqlPlatforms.All,
+SqlClrProperty, childRelationship, SqlTypeSpecifierBase, Type,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlClrProperty, property, string, ClrName, SqlPlatforms.All,
+SqlColumnEncryptionKey, childRelationship, SqlColumnEncryptionKeyValue, ColumnEncryptionKeyValues,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlColumnEncryptionKeyValue, childRelationship, SqlColumnMasterKey, ColumnMasterKey,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlColumnEncryptionKeyValue, parentRelationship, SqlColumnEncryptionKey, Parent,  SqlPlatforms.All
+SqlColumnEncryptionKeyValue, property, string, EncryptedValue, SqlPlatforms.All,
+SqlColumnEncryptionKeyValue, property, string, EncryptionAlgorithm, SqlPlatforms.All,
+SqlColumnMasterKey, property, string, KeyStoreProviderName, SqlPlatforms.All,
+SqlColumnMasterKey, property, string, KeyPath, SqlPlatforms.All,
+SqlColumnMasterKey, property, bool, AllowEnclaveComputations, SqlPlatforms.Sql150,
+SqlColumnMasterKey, property, string, Signature, SqlPlatforms.Sql150,
+SqlColumnSet, childRelationship, SqlTypeSpecifierBase, TypeSpecifier,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlColumnSet, parentRelationship, ISqlColumnSource, Parent,  SqlPlatforms.All
+SqlColumnSet, parentRelationship, SqlForeignKeyConstraint, ReferencingForeignKey,  SqlPlatforms.All
+SqlColumnSet, parentRelationship, SqlDefaultConstraint, Defaults,  SqlPlatforms.All
+SqlColumnSet, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlColumnSet, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlColumnStoreIndex, childRelationship, ISqlColumnSource, IndexedObject,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlColumnStoreIndex, childRelationship, SqlIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlColumnStoreIndex, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.Sql130AndUp, ModelRelationshipType.Peer
+SqlColumnStoreIndex, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlColumnStoreIndex, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlColumnStoreIndex, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlColumnStoreIndex, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlColumnStoreIndex, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlColumnStoreIndex, property, int, CompressionDelay, SqlPlatforms.Sql130AndUp,
+SqlColumnStoreIndex, property, bool, IsDisabled, SqlPlatforms.All,
+SqlColumnStoreIndex, property, bool, IsClustered, SqlPlatforms.All,
+SqlColumnStoreIndex, externalProperty, SqlScriptProperty, FilterPredicate,  SqlPlatforms.Sql130AndUp
+SqlComputedColumn, childRelationship, ISqlModelElement, ExpressionDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlComputedColumn, childRelationship, SqlTypeSpecifierBase, TypeSpecifier,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlComputedColumn, parentRelationship, ISqlColumnSource, Parent,  SqlPlatforms.All
+SqlComputedColumn, parentRelationship, SqlForeignKeyConstraint, ReferencingForeignKey,  SqlPlatforms.All
+SqlComputedColumn, parentRelationship, SqlDefaultConstraint, Defaults,  SqlPlatforms.All
+SqlComputedColumn, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlComputedColumn, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlComputedColumn, property, bool, IsPersisted, SqlPlatforms.All,
+SqlComputedColumn, property, bool?, IsPersistedNullable, SqlPlatforms.All,
+SqlComputedColumn, externalProperty, SqlScriptProperty, ExpressionScript,  SqlPlatforms.All
+SqlContract, childRelationship, SqlContractMessageSpecifier, Messages,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlContract, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlContract, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlContract, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlContractMessageSpecifier, childRelationship, SqlMessageType, MessageType,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlContractMessageSpecifier, property, bool, IsDefault, SqlPlatforms.OnPremises,
+SqlContractMessageSpecifier, property, int, SentBy, SqlPlatforms.OnPremises,
+SqlCredential, childRelationship, SqlCryptographicProvider, Provider,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlCredential, property, string, Identity, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCredential, property, string, Secret, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlCryptographicProvider, property, string, DllPath, SqlPlatforms.Sql100AndUp,
+SqlCryptographicProvider, property, bool, Enabled, SqlPlatforms.Sql100AndUp,
+SqlDatabaseAuditSpecification, childRelationship, SqlAuditActionSpecification, AuditActions,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Composing
+SqlDatabaseAuditSpecification, childRelationship, SqlServerAudit, ServerAudit,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlDatabaseAuditSpecification, childRelationship, SqlAuditActionGroup, AuditActionGroups,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Composing
+SqlDatabaseAuditSpecification, property, bool, IsStateOn, SqlPlatforms.Sql100AndUp,
+SqlDatabaseCredential, property, string, Identity, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseCredential, property, string, Secret, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseDdlTrigger, childRelationship, SqlTriggerEventTypeSpecifier, EventType,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlDatabaseDdlTrigger, childRelationship, SqlEventGroupSpecifier, EventGroup,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlDatabaseDdlTrigger, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDatabaseDdlTrigger, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlDatabaseDdlTrigger, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDatabaseDdlTrigger, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDatabaseDdlTrigger, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDatabaseDdlTrigger, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDatabaseDdlTrigger, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseDdlTrigger, property, int, SqlTriggerType, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, bool, IsDisabled, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, bool, IsCaller, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, bool, IsSelf, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, bool, IsOwner, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, string, MethodName, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, property, string, ClassName, SqlPlatforms.All,
+SqlDatabaseDdlTrigger, externalProperty, SqlScriptProperty, BodyScript,  SqlPlatforms.All
+SqlDatabaseEncryptionKey, childRelationship, SqlCertificate, ServerCertificate,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlDatabaseEncryptionKey, childRelationship, SqlAsymmetricKey, AsymmetricKey,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlDatabaseEncryptionKey, property, int, Algorithm, SqlPlatforms.Sql100AndUp,
+SqlDatabaseEventNotification, childRelationship, SqlEventTypeSpecifierBase, EventType,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlDatabaseEventNotification, childRelationship, SqlEventGroupSpecifier, EventGroup,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlDatabaseEventNotification, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDatabaseEventNotification, property, bool, IsWithFanIn, SqlPlatforms.OnPremises,
+SqlDatabaseEventNotification, property, string, BrokerInstanceSpecifier, SqlPlatforms.OnPremises,
+SqlDatabaseEventNotification, property, string, Service, SqlPlatforms.OnPremises,
+SqlDatabaseEventSession, childRelationship, SqlEventSessionDefinitions, Definitions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlDatabaseEventSession, childRelationship, SqlEventSessionTarget, Targets,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlDatabaseEventSession, property, int, SessionScope, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, MaxMemory, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, MaxMemorySpecifiedAs, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, EventRetentionMode, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, MaxDispatchLatencySeconds, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, MaxEventSize, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, MaxEventSizeSpecifiedAs, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, int, MemoryPartitionMode, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, bool, IsOnTrackCausality, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseEventSession, property, bool, IsOnStartupState, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseMirroringLanguageSpecifier, childRelationship, SqlCertificate, AuthenticationCertificate,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlDatabaseMirroringLanguageSpecifier, property, int, AuthenticationWindowsMode, SqlPlatforms.OnPremises,
+SqlDatabaseMirroringLanguageSpecifier, property, bool, DoUseCertificateFirst, SqlPlatforms.OnPremises,
+SqlDatabaseMirroringLanguageSpecifier, property, int, EncryptionMode, SqlPlatforms.OnPremises,
+SqlDatabaseMirroringLanguageSpecifier, property, int, EncryptionAlgorithmPart1, SqlPlatforms.OnPremises,
+SqlDatabaseMirroringLanguageSpecifier, property, int, EncryptionAlgorithmPart2, SqlPlatforms.OnPremises,
+SqlDatabaseMirroringLanguageSpecifier, property, int, RoleType, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, childRelationship, SqlFilegroup, DefaultFilegroup,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlDatabaseOptions, childRelationship, SqlFilegroup, DefaultFileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlDatabaseOptions, childRelationship, SqlGenericDatabaseScopedConfigurationOptions, GenericDatabaseScopedConfigurationOptions,  SqlPlatforms.Sql140AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlDatabaseOptions, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDatabaseOptions, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlDatabaseOptions, property, string, Collation, SqlPlatforms.All,
+SqlDatabaseOptions, property, bool, IsAnsiNullDefaultOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsAnsiNullsOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsAnsiPaddingOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsAnsiWarningsOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsArithAbortOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsConcatNullYieldsNullOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsQuotedIdentifierOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsNumericRoundAbortOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsRecursiveTriggersOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsOffline, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsReadOnly, SqlPlatforms.All,
+SqlDatabaseOptions, property, bool, IsCursorCloseOnCommitOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsCursorDefaultScopeGlobal, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsAutoCloseOn, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsAutoCreateStatisticsOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsAutoCreateStatisticsIncrementalOn, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, IsAutoShrinkOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsAutoUpdateStatisticsOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsTornPageProtectionOn, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, int, UserAccess, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, int, RecoveryMode, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsFullTextEnabled, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsDBChainingOn, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, int, CompatibilityMode, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsTrustworthyOn, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsAutoUpdateStatisticsAsyncOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, int, PageVerifyMode, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, int, ServiceBrokerOption, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsDateCorrelationOptimizationOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, int, ParameterizationOption, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsAllowSnapshotIsolation, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsReadCommittedSnapshot, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsMemoryOptimizedElevatedToSnapshot, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsVardecimalStorageFormatOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDatabaseOptions, property, bool, IsSupplementalLoggingOn, SqlPlatforms.OnPremises,
+SqlDatabaseOptions, property, bool, IsChangeTrackingOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, IsChangeTrackingAutoCleanupOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, ChangeTrackingRetentionPeriod, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, ChangeTrackingRetentionUnit, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, IsEncryptionOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, IsBrokerPriorityHonored, SqlPlatforms.Sql100AndUp,
+SqlDatabaseOptions, property, int, Containment, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, string, DefaultLanguage, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, string, DefaultFullTextLanguage, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, bool, IsNestedTriggersOn, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, bool, IsTransformNoiseWordsOn, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, short, TwoDigitYearCutoff, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, int?, CatalogCollation, SqlPlatforms.SqlAzureV12,
+SqlDatabaseOptions, property, int, NonTransactedFileStreamAccess, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, string, FileStreamDirectoryName, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, int, TargetRecoveryTimePeriod, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, int, TargetRecoveryTimeUnit, SqlPlatforms.Sql110AndUp,
+SqlDatabaseOptions, property, int, DelayedDurabilityMode, SqlPlatforms.Sql120AndUp,
+SqlDatabaseOptions, property, int, QueryStoreDesiredState, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, QueryStoreCaptureMode, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, QueryStoreFlushInterval, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, QueryStoreIntervalLength, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, QueryStoreMaxStorageSize, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, QueryStoreMaxPlansPerQuery, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, QueryStoreStaleQueryThreshold, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int, MaxDop, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, int?, MaxDopForSecondary, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, LegacyCardinalityEstimation, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool?, LegacyCardinalityEstimationForSecondary, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, ParameterSniffing, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool?, ParameterSniffingForSecondary, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, QueryOptimizerHotfixes, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool?, QueryOptimizerHotfixesForSecondary, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDatabaseOptions, property, bool, RemoteDataEnabled, SqlPlatforms.Sql130AndUp,
+SqlDatabaseOptions, property, bool, TemporalHistoryRetentionEnabled, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlDataCompressionOption, property, int, CompressionLevel, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDataCompressionOption, property, int, PartitionNumber, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlDefault, childRelationship, ISqlLegacyDataConstraintTarget, BoundTargets,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlDefault, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlDefault, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDefault, externalProperty, SqlScriptProperty, ExpressionScript,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDefaultConstraint, childRelationship, SqlColumn, ForColumn,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDefaultConstraint, childRelationship, ISqlModelElement, ExpressionDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDefaultConstraint, childRelationship, ISqlSpecifiesTable, DefiningTable,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlDefaultConstraint, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDefaultConstraint, property, bool, IsWithValues, SqlPlatforms.All,
+SqlDefaultConstraint, property, bool, IsDisabled, SqlPlatforms.All,
+SqlDefaultConstraint, externalProperty, SqlScriptProperty, DefaultExpressionScript,  SqlPlatforms.All
+SqlDmlTrigger, childRelationship, ISqlColumnSource, Parent,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlDmlTrigger, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDmlTrigger, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlDmlTrigger, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDmlTrigger, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDmlTrigger, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlDmlTrigger, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlDmlTrigger, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlDmlTrigger, property, bool, IsInsertTrigger, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsUpdateTrigger, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsDeleteTrigger, SqlPlatforms.All,
+SqlDmlTrigger, property, int, InsertOrderRestriction, SqlPlatforms.All,
+SqlDmlTrigger, property, int, UpdateOrderRestriction, SqlPlatforms.All,
+SqlDmlTrigger, property, int, DeleteOrderRestriction, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsWithAppend, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDmlTrigger, property, bool, IsNotForReplication, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDmlTrigger, property, bool, IsNativeCompiled, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDmlTrigger, property, bool, IsSchemaBound, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlDmlTrigger, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlDmlTrigger, property, int, SqlTriggerType, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsDisabled, SqlPlatforms.All,
+SqlDmlTrigger, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlDmlTrigger, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsCaller, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsSelf, SqlPlatforms.All,
+SqlDmlTrigger, property, bool, IsOwner, SqlPlatforms.All,
+SqlDmlTrigger, property, string, MethodName, SqlPlatforms.All,
+SqlDmlTrigger, property, string, ClassName, SqlPlatforms.All,
+SqlDmlTrigger, externalProperty, SqlScriptProperty, BodyScript,  SqlPlatforms.All
+SqlDynamicColumnSource, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlDynamicColumnSource, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlDynamicColumnSource, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlEndpoint, childRelationship, ISqlProtocolSpecifier, ProtocolSpecifier,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlEndpoint, childRelationship, ISqlEndpointLanguageSpecifier, PayloadSpecifier,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlEndpoint, childRelationship, ISqlServerObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlEndpoint, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlEndpoint, property, int, State, SqlPlatforms.OnPremises,
+SqlEndpoint, property, int, Protocol, SqlPlatforms.OnPremises,
+SqlEndpoint, property, int, Payload, SqlPlatforms.OnPremises,
+SqlErrorMessage, property, int, MessageNumber, SqlPlatforms.OnPremises,
+SqlErrorMessage, property, int, Severity, SqlPlatforms.OnPremises,
+SqlErrorMessage, property, string, MessageText, SqlPlatforms.OnPremises,
+SqlErrorMessage, property, string, Language, SqlPlatforms.OnPremises,
+SqlErrorMessage, property, bool, IsWithLog, SqlPlatforms.OnPremises,
+SqlEventGroupSpecifier, property, int, EventGroup, SqlPlatforms.All,
+SqlEventSession, childRelationship, SqlEventSessionDefinitions, Definitions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlEventSession, childRelationship, SqlEventSessionTarget, Targets,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlEventSession, property, int, SessionScope, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, MaxMemory, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, MaxMemorySpecifiedAs, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, EventRetentionMode, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, MaxDispatchLatencySeconds, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, MaxEventSize, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, MaxEventSizeSpecifiedAs, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, int, MemoryPartitionMode, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, bool, IsOnTrackCausality, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSession, property, bool, IsOnStartupState, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionAction, property, string, EventModuleGuid, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionAction, property, string, EventPackageName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionAction, property, string, ActionName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionDefinitions, childRelationship, SqlEventSessionSetting, AttributeSettings,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlEventSessionDefinitions, childRelationship, SqlEventSessionAction, Actions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlEventSessionDefinitions, parentRelationship, SqlEventSessionBase, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlEventSessionDefinitions, property, string, EventModuleGuid, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionDefinitions, property, string, EventPackageName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionDefinitions, property, string, EventName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionDefinitions, externalProperty, SqlScriptProperty, WhereExpression,  SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlEventSessionSetting, property, string, SettingName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionSetting, externalProperty, SqlScriptProperty, SettingValue,  SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlEventSessionTarget, childRelationship, SqlEventSessionSetting, ParameterSettings,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlEventSessionTarget, property, string, EventModuleGuid, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionTarget, property, string, EventPackageName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventSessionTarget, property, string, TargetName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlEventTypeSpecifier, property, int, EventType, SqlPlatforms.All,
+SqlExtendedProcedure, childRelationship, SqlSubroutineParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlExtendedProcedure, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlExtendedProcedure, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlExtendedProcedure, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlExtendedProcedure, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlExtendedProcedure, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlExtendedProcedure, property, bool, IsCaller, SqlPlatforms.All,
+SqlExtendedProcedure, property, bool, IsSelf, SqlPlatforms.All,
+SqlExtendedProcedure, property, bool, IsOwner, SqlPlatforms.All,
+SqlExtendedProperty, childRelationship, ISqlExtendedPropertyHost, Host,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Hierarchical
+SqlExtendedProperty, externalProperty, SqlScriptProperty, Value,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlExternalDataSource, childRelationship, SqlDatabaseCredential, Credential,  SqlPlatforms.Sql130AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlExternalDataSource, parentRelationship, SqlExternalTable, ExternalTables,  SqlPlatforms.Sql130AndUpAndSqlAzureV12
+SqlExternalDataSource, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlExternalDataSource, property, int, DataSourceType, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlExternalDataSource, property, string, Location, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlExternalDataSource, property, string, ResourceManagerLocation, SqlPlatforms.Sql130AndUp,
+SqlExternalDataSource, property, string, DatabaseName, SqlPlatforms.SqlAzureV12,
+SqlExternalDataSource, property, string, ShardMapName, SqlPlatforms.SqlAzureV12,
+SqlExternalFileFormat, parentRelationship, SqlExternalTable, ExternalTables,  SqlPlatforms.Sql130AndUp
+SqlExternalFileFormat, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlExternalFileFormat, property, int, FormatType, SqlPlatforms.Sql130AndUp,
+SqlExternalFileFormat, property, string, SerDeMethod, SqlPlatforms.Sql130AndUp,
+SqlExternalFileFormat, property, string, FieldTerminator, SqlPlatforms.Sql130AndUp,
+SqlExternalFileFormat, property, string, StringDelimiter, SqlPlatforms.Sql130AndUp,
+SqlExternalFileFormat, property, string, DateFormat, SqlPlatforms.Sql130AndUp,
+SqlExternalFileFormat, property, bool, UseTypeDefault, SqlPlatforms.Sql130AndUp,
+SqlExternalFileFormat, property, string, DataCompression, SqlPlatforms.Sql130AndUp,
+SqlExternalTable, childRelationship, SqlExternalDataSource, DataSourceName,  SqlPlatforms.Sql130AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlExternalFileFormat, FileFormatName,  SqlPlatforms.Sql130AndUp, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlColumn, ShardingColumn,  SqlPlatforms.SqlAzureV12, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlExternalTable, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlExternalTable, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlFilegroup, FileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlPartitionScheme, FileStreamPartitionScheme,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlExternalTable, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlExternalTable, parentRelationship, SqlColumnStoreIndex, ColumnStoreIndexes,  SqlPlatforms.Sql110AndUpAndSqlAzureV12
+SqlExternalTable, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlExternalTable, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlExternalTable, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlExternalTable, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlExternalTable, parentRelationship, SqlConstraint, Constraints,  SqlPlatforms.All
+SqlExternalTable, parentRelationship, SqlStatistic, Statistics,  SqlPlatforms.All
+SqlExternalTable, parentRelationship, SqlFullTextIndex, FullTextIndex,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlExternalTable, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlExternalTable, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlExternalTable, property, string, Location, SqlPlatforms.Sql130AndUp,
+SqlExternalTable, property, int?, RejectType, SqlPlatforms.Sql130AndUp,
+SqlExternalTable, property, double?, RejectValue, SqlPlatforms.Sql130AndUp,
+SqlExternalTable, property, double?, RejectSampleValue, SqlPlatforms.Sql130AndUp,
+SqlExternalTable, property, int, DistributionPolicyType, SqlPlatforms.SqlAzureV12,
+SqlExternalTable, property, string, ExternalSchemaName, SqlPlatforms.SqlAzureV12,
+SqlExternalTable, property, string, ExternalObjectName, SqlPlatforms.SqlAzureV12,
+SqlExternalTable, property, int, LockEscalation, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlExternalTable, property, bool, IsTableLockOnBulkLoad, SqlPlatforms.All,
+SqlExternalTable, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlExternalTable, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlExternalTable, property, bool?, IsFileStreamNull, SqlPlatforms.Sql100AndUp,
+SqlFile, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.OnPremises, ModelRelationshipType.Hierarchical
+SqlFile, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlFile, property, string, FileName, SqlPlatforms.OnPremises,
+SqlFile, property, int?, Size, SqlPlatforms.OnPremises,
+SqlFile, property, int, SizeUnit, SqlPlatforms.OnPremises,
+SqlFile, property, int?, MaxSize, SqlPlatforms.OnPremises,
+SqlFile, property, int, MaxSizeUnit, SqlPlatforms.OnPremises,
+SqlFile, property, bool, IsUnlimited, SqlPlatforms.OnPremises,
+SqlFile, property, int?, FileGrowth, SqlPlatforms.OnPremises,
+SqlFile, property, int, FileGrowthUnit, SqlPlatforms.OnPremises,
+SqlFile, property, bool, IsLogFile, SqlPlatforms.OnPremises,
+SqlFile, property, bool, IsOffline, SqlPlatforms.OnPremises,
+SqlFilegroup, parentRelationship, ISqlSpecifiesStorage, StoredObjects,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlFilegroup, parentRelationship, SqlTableBase, TextImagedTable,  SqlPlatforms.OnPremises
+SqlFilegroup, parentRelationship, SqlFile, Files,  SqlPlatforms.OnPremises
+SqlFilegroup, parentRelationship, SqlDatabaseOptions, DefaultOf,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlFilegroup, parentRelationship, ISqlSpecifiesFileStream, StoredFileStreamObjects,  SqlPlatforms.Sql100AndUp
+SqlFilegroup, parentRelationship, SqlDatabaseOptions, DefaultOfFileStream,  SqlPlatforms.Sql100AndUp
+SqlFilegroup, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlFilegroup, property, bool, IsReadOnly, SqlPlatforms.OnPremises,
+SqlFilegroup, property, bool, DoesContainFileStream, SqlPlatforms.Sql100AndUp,
+SqlFilegroup, property, bool, ContainsMemoryOptimizedData, SqlPlatforms.Sql120AndUp,
+SqlFilegroupSpecifier, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlFilegroupSpecifier, property, bool, IsDefault, SqlPlatforms.OnPremises,
+SqlFileTable, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlFileTable, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlFileTable, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFileTable, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFileTable, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFileTable, childRelationship, SqlFilegroup, FileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlFileTable, childRelationship, SqlPartitionScheme, FileStreamPartitionScheme,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlFileTable, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlFileTable, parentRelationship, SqlColumnStoreIndex, ColumnStoreIndexes,  SqlPlatforms.Sql110AndUpAndSqlAzureV12
+SqlFileTable, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlFileTable, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlFileTable, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlFileTable, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlFileTable, parentRelationship, SqlConstraint, Constraints,  SqlPlatforms.All
+SqlFileTable, parentRelationship, SqlStatistic, Statistics,  SqlPlatforms.All
+SqlFileTable, parentRelationship, SqlFullTextIndex, FullTextIndex,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlFileTable, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlFileTable, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlFileTable, property, string, FileTableDirectory, SqlPlatforms.Sql110AndUp,
+SqlFileTable, property, string, FileTableCollateFilename, SqlPlatforms.Sql110AndUp,
+SqlFileTable, property, bool, IsFileTableNamespaceEnabled, SqlPlatforms.Sql110AndUp,
+SqlFileTable, property, int, LockEscalation, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlFileTable, property, bool, IsTableLockOnBulkLoad, SqlPlatforms.All,
+SqlFileTable, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlFileTable, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlFileTable, property, bool?, IsFileStreamNull, SqlPlatforms.Sql100AndUp,
+SqlForeignKeyConstraint, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlForeignKeyConstraint, childRelationship, SqlTableBase, ForeignTable,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlForeignKeyConstraint, childRelationship, SqlColumn, ForeignColumns,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlForeignKeyConstraint, childRelationship, ISqlSpecifiesTable, DefiningTable,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlForeignKeyConstraint, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlForeignKeyConstraint, property, bool, IsNotForReplication, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlForeignKeyConstraint, property, int, OnUpdateAction, SqlPlatforms.All,
+SqlForeignKeyConstraint, property, int, OnDeleteAction, SqlPlatforms.All,
+SqlForeignKeyConstraint, property, bool, IsDisabled, SqlPlatforms.All,
+SqlFullTextCatalog, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlFullTextCatalog, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlFullTextCatalog, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlFullTextCatalog, property, string, Path, SqlPlatforms.All,
+SqlFullTextCatalog, property, bool?, IsAccentSensitive, SqlPlatforms.All,
+SqlFullTextCatalog, property, bool, IsDefault, SqlPlatforms.All,
+SqlFullTextIndex, childRelationship, ISqlFulltextIndexedObject, IndexedObject,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Hierarchical
+SqlFullTextIndex, childRelationship, SqlFullTextCatalog, Catalog,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFullTextIndex, childRelationship, ISqlSpecifiesIndex, KeyName,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFullTextIndex, childRelationship, SqlFullTextIndexColumnSpecifier, Columns,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlFullTextIndex, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlFullTextIndex, childRelationship, SqlFullTextStopList, StopList,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlFullTextIndex, childRelationship, SqlSearchPropertyList, SearchPropertyList,  SqlPlatforms.Sql110AndUp, ModelRelationshipType.Peer
+SqlFullTextIndex, property, bool, IsDisabled, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlFullTextIndex, property, int, ChangeTrackingOption, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlFullTextIndex, property, bool, IsStopListOff, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlFullTextIndex, property, bool, DoUseSystemStopList, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlFullTextIndex, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlFullTextIndexColumnSpecifier, childRelationship, SqlColumn, Column,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFullTextIndexColumnSpecifier, childRelationship, SqlColumn, TypeColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlFullTextIndexColumnSpecifier, property, int?, LanguageId, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlFullTextIndexColumnSpecifier, property, bool, IsPartOfStatisticalSemanticAnalysis, SqlPlatforms.Sql110AndUp,
+SqlFullTextStopList, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlFullTextStopList, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlGenericDatabaseScopedConfigurationOptions, property, int, GenericValueType, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlGenericDatabaseScopedConfigurationOptions, property, string, GenericValue, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlGenericDatabaseScopedConfigurationOptions, property, string, GenericSecondaryValue, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlHttpProtocolSpecifier, property, string, Path, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, int, AuthenticationMode, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, int, Ports, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, bool, IsListeningAllSites, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, bool, IsListeningAllNoneReservedSites, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, string, Website, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, int?, ClearPort, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, int?, SslPort, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, string, AuthenticationRealm, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, string, DefaultLogonDomain, SqlPlatforms.Sql100
+SqlHttpProtocolSpecifier, property, bool, IsCompressionEnabled, SqlPlatforms.Sql100
+SqlIndex, childRelationship, ISqlColumnSource, IndexedObject,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlIndex, childRelationship, SqlColumn, IncludedColumns,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlIndex, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlIndex, childRelationship, SqlIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlIndex, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlIndex, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlIndex, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlIndex, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlIndex, childRelationship, SqlFilegroup, FileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlIndex, childRelationship, SqlPartitionScheme, FileStreamPartitionScheme,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlIndex, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlIndex, property, bool, IsUnique, SqlPlatforms.All,
+SqlIndex, property, bool, DoIncrementalStatistics, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlIndex, property, bool, IsDisabled, SqlPlatforms.All,
+SqlIndex, property, int?, FillFactor, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlIndex, property, bool, IsPadded, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlIndex, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.All,
+SqlIndex, property, bool, DoRecomputeStatistics, SqlPlatforms.All,
+SqlIndex, property, bool, DoAllowRowLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlIndex, property, bool, DoAllowPageLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlIndex, property, bool, IsClustered, SqlPlatforms.All,
+SqlIndex, property, bool?, IsFileStreamNull, SqlPlatforms.Sql100AndUp,
+SqlIndex, property, bool, IsHash, SqlPlatforms.All,
+SqlIndex, property, int?, BucketCount, SqlPlatforms.All,
+SqlIndex, externalProperty, SqlScriptProperty, FilterPredicate,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlIndexedColumnSpecification, childRelationship, SqlColumn, Column,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlIndexedColumnSpecification, property, bool, IsAscending, SqlPlatforms.All,
+SqlInlineTableValuedFunction, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlInlineTableValuedFunction, childRelationship, SqlTypeSpecifierBase, Type,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlInlineTableValuedFunction, childRelationship, ISqlFunctionImplementation, FunctionBody,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlInlineTableValuedFunction, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlInlineTableValuedFunction, childRelationship, SqlSubroutineParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlInlineTableValuedFunction, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlInlineTableValuedFunction, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlInlineTableValuedFunction, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlInlineTableValuedFunction, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlInlineTableValuedFunction, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlInlineTableValuedFunction, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlInlineTableValuedFunction, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlInlineTableValuedFunction, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlInlineTableValuedFunction, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlInlineTableValuedFunction, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlInlineTableValuedFunction, property, bool, IsSchemaBound, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, DoReturnNullForNullInput, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, IsCalledForNullInput, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, IsNativeCompiled, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlInlineTableValuedFunction, property, bool, IsCaller, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, IsSelf, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, IsOwner, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlInlineTableValuedFunction, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlLinkedServer, parentRelationship, SqlLinkedServerLogin, Logins,  SqlPlatforms.All
+SqlLinkedServer, property, string, ProductName, 240,
+SqlLinkedServer, property, string, Provider, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, string, DataSource, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, string, Location, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, string, ProviderString, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, string, Catalog, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsCollationCompatible, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, string, CollationName, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, int, ConnectTimeout, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsDataAccessEnabled, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsDistributor, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsLazySchemaValidationEnabled, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsPublisher, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, int, QueryTimeout, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsRpcEnabled, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsRpcOutEnabled, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsSubscriber, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, UseRemoteCollation, SqlPlatforms.OnPremises,
+SqlLinkedServer, property, bool, IsRemoteProcTransactionPromotionEnabled, SqlPlatforms.Sql100AndUp,
+SqlLinkedServerLogin, childRelationship, SqlLogin, LocalLogin,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlLinkedServerLogin, childRelationship, SqlLinkedServer, LinkedServer,  SqlPlatforms.OnPremises, ModelRelationshipType.Hierarchical
+SqlLinkedServerLogin, property, string, RemoteUserName, SqlPlatforms.OnPremises,
+SqlLinkedServerLogin, property, string, RemoteUserPassword, SqlPlatforms.OnPremises,
+SqlLinkedServerLogin, property, bool, DoUseSelf, SqlPlatforms.OnPremises,
+SqlLogin, childRelationship, SqlCredential, Credential,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlLogin, childRelationship, SqlCertificate, Certificate,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlLogin, childRelationship, SqlAsymmetricKey, AsymmetricKey,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlLogin, parentRelationship, SqlServerRoleMembership, RoleMemberships,  SqlPlatforms.All
+SqlLogin, parentRelationship, SqlPermissionStatement, GrantedPermissions,  SqlPlatforms.All
+SqlLogin, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlLogin, parentRelationship, ISqlServerAuthorizedObject, AuthorizedObjects,  SqlPlatforms.All
+SqlLogin, property, bool, IsMappedToWindowsLogin, SqlPlatforms.OnPremises,
+SqlLogin, property, string, Password, SqlPlatforms.All,
+SqlLogin, property, string, DefaultDatabase, SqlPlatforms.OnPremises,
+SqlLogin, property, string, DefaultLanguage, SqlPlatforms.OnPremises,
+SqlLogin, property, string, Sid, SqlPlatforms.OnPremises,
+SqlLogin, property, int, EncryptionOption, SqlPlatforms.OnPremises,
+SqlLogin, property, bool, IsPasswordHashed, SqlPlatforms.OnPremises,
+SqlLogin, property, bool, IsPasswordMustChange, SqlPlatforms.OnPremises,
+SqlLogin, property, bool, IsCheckExpirationOn, SqlPlatforms.OnPremises,
+SqlLogin, property, bool, IsCheckPolicyOn, SqlPlatforms.OnPremises,
+SqlLogin, property, bool, IsDisabled, SqlPlatforms.All,
+SqlMasterKey, property, string, EncryptionPassword, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlMessageType, childRelationship, SqlXmlSchemaCollection, XmlSchemaCollection,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlMessageType, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlMessageType, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlMessageType, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlMessageType, property, int, ValidationMethod, SqlPlatforms.OnPremises,
+SqlMultiStatementTableValuedFunction, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlMultiStatementTableValuedFunction, childRelationship, SqlTypeSpecifierBase, Type,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlMultiStatementTableValuedFunction, childRelationship, ISqlFunctionImplementation, FunctionBody,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlMultiStatementTableValuedFunction, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlMultiStatementTableValuedFunction, childRelationship, SqlSubroutineParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlMultiStatementTableValuedFunction, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlMultiStatementTableValuedFunction, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlMultiStatementTableValuedFunction, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlMultiStatementTableValuedFunction, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlMultiStatementTableValuedFunction, parentRelationship, SqlConstraint, Constraints,  SqlPlatforms.All
+SqlMultiStatementTableValuedFunction, property, string, ReturnTableVariable, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsSchemaBound, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, DoReturnNullForNullInput, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsCalledForNullInput, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsNativeCompiled, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlMultiStatementTableValuedFunction, property, bool, IsCaller, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsSelf, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsOwner, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlMultiStatementTableValuedFunction, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlPartitionFunction, childRelationship, SqlTypeSpecifierBase, ParameterType,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlPartitionFunction, childRelationship, SqlPartitionValue, BoundaryValues,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlPartitionFunction, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlPartitionFunction, property, int, Range, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlPartitionScheme, childRelationship, SqlPartitionFunction, PartitionFunction,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlPartitionScheme, childRelationship, SqlFilegroupSpecifier, Filegroups,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlPartitionScheme, parentRelationship, ISqlSpecifiesStorage, StoredObjects,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlPartitionScheme, parentRelationship, ISqlSpecifiesFileStream, StoredFileStreamObjects,  SqlPlatforms.Sql100AndUp
+SqlPartitionScheme, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlPartitionScheme, property, bool, IsAllToOneFilegroup, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlPartitionValue, childRelationship, ISqlModelElement, ExpressionDependencies,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlPartitionValue, externalProperty, SqlScriptProperty, ExpressionScript,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlPermissionStatement, childRelationship, ISqlSecurable, SecuredObject,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlPermissionStatement, childRelationship, SqlSecurityPrincipal, Grantee,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlPermissionStatement, childRelationship, SqlSecurityPrincipal, Grantor,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlPermissionStatement, childRelationship, SqlColumn, ExcludedColumns,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlPermissionStatement, childRelationship, SqlColumn, RevokedGrantOptionColumns,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlPermissionStatement, property, int, PermissionAction, SqlPlatforms.All,
+SqlPermissionStatement, property, bool, IsWithGrantOption, SqlPlatforms.All,
+SqlPermissionStatement, property, bool, IsAllPrivileges, SqlPlatforms.All,
+SqlPermissionStatement, property, int, Permission, SqlPlatforms.All,
+SqlPrimaryKeyConstraint, childRelationship, ISqlSpecifiesTable, DefiningTable,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlPrimaryKeyConstraint, childRelationship, SqlIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlPrimaryKeyConstraint, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlPrimaryKeyConstraint, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlPrimaryKeyConstraint, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlPrimaryKeyConstraint, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlPrimaryKeyConstraint, childRelationship, SqlFilegroup, FileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlPrimaryKeyConstraint, childRelationship, SqlPartitionScheme, FileStreamPartitionScheme,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlPrimaryKeyConstraint, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlPrimaryKeyConstraint, property, bool, IsClustered, SqlPlatforms.All,
+SqlPrimaryKeyConstraint, property, bool, IsDisabled, SqlPlatforms.All,
+SqlPrimaryKeyConstraint, property, int?, FillFactor, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlPrimaryKeyConstraint, property, bool, IsPadded, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlPrimaryKeyConstraint, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.All,
+SqlPrimaryKeyConstraint, property, bool, DoRecomputeStatistics, SqlPlatforms.All,
+SqlPrimaryKeyConstraint, property, bool, DoAllowRowLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlPrimaryKeyConstraint, property, bool, DoAllowPageLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlPrimaryKeyConstraint, property, bool?, IsFileStreamNull, SqlPlatforms.Sql100AndUp,
+SqlPrimaryKeyConstraint, property, bool, IsHash, SqlPlatforms.All,
+SqlPrimaryKeyConstraint, property, int?, BucketCount, SqlPlatforms.All,
+SqlProcedure, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlProcedure, childRelationship, SqlProcedure, ParentProc,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlProcedure, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlProcedure, childRelationship, SqlSubroutineParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlProcedure, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlProcedure, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlProcedure, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlProcedure, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlProcedure, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlProcedure, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlProcedure, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlProcedure, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlProcedure, property, bool, IsRecompiled, SqlPlatforms.All,
+SqlProcedure, property, bool, IsForReplication, SqlPlatforms.OnPremises,
+SqlProcedure, property, bool, IsNativeCompiled, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlProcedure, property, bool, IsSchemaBound, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlProcedure, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlProcedure, property, bool, IsCaller, SqlPlatforms.All,
+SqlProcedure, property, bool, IsSelf, SqlPlatforms.All,
+SqlProcedure, property, bool, IsOwner, SqlPlatforms.All,
+SqlProcedure, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlProcedure, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlProcedure, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlProcedure, property, string, MethodName, SqlPlatforms.All,
+SqlProcedure, property, string, ClassName, SqlPlatforms.All,
+SqlProcedure, externalProperty, SqlScriptProperty, BodyScript,  SqlPlatforms.All
+SqlPromotedNodePathForSqlType, childRelationship, SqlTypeSpecifier, Type,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlPromotedNodePathForSqlType, property, string, NodePath, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlPromotedNodePathForSqlType, property, bool, IsSingleton, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlPromotedNodePathForXQueryType, property, string, Type, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlPromotedNodePathForXQueryType, property, int?, MaxLength, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlPromotedNodePathForXQueryType, property, string, NodePath, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlPromotedNodePathForXQueryType, property, bool, IsSingleton, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlQueue, childRelationship, SqlProcedure, ActivationProcedure,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlQueue, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlQueue, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlQueue, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlQueue, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlQueue, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlQueue, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlQueue, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlQueue, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlQueue, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlQueue, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlQueue, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlQueue, property, bool, IsStatusOn, SqlPlatforms.OnPremises,
+SqlQueue, property, bool, IsRetentionOn, SqlPlatforms.OnPremises,
+SqlQueue, property, bool?, IsActivationOn, SqlPlatforms.OnPremises,
+SqlQueue, property, int?, MaxQueueReaders, SqlPlatforms.OnPremises,
+SqlQueue, property, bool, IsPoisonMessageHandlingEnabled, SqlPlatforms.Sql100AndUp,
+SqlQueue, property, bool, IsCaller, SqlPlatforms.All,
+SqlQueue, property, bool, IsSelf, SqlPlatforms.All,
+SqlQueue, property, bool, IsOwner, SqlPlatforms.All,
+SqlQueueEventNotification, childRelationship, SqlQueue, Queue,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlQueueEventNotification, childRelationship, SqlEventTypeSpecifierBase, EventType,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlQueueEventNotification, childRelationship, SqlEventGroupSpecifier, EventGroup,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlQueueEventNotification, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlQueueEventNotification, property, bool, IsWithFanIn, SqlPlatforms.OnPremises,
+SqlQueueEventNotification, property, string, BrokerInstanceSpecifier, SqlPlatforms.OnPremises,
+SqlQueueEventNotification, property, string, Service, SqlPlatforms.OnPremises,
+SqlRemoteServiceBinding, childRelationship, SqlDatabaseSecurityPrincipal, WithUser,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlRemoteServiceBinding, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlRemoteServiceBinding, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlRemoteServiceBinding, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlRemoteServiceBinding, property, string, Service, SqlPlatforms.OnPremises,
+SqlRemoteServiceBinding, property, bool, IsAnonymousOn, SqlPlatforms.OnPremises,
+SqlResourceGovernor, childRelationship, SqlScalarFunction, ClassifierFunction,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlResourceGovernor, property, bool?, IsEnabled, SqlPlatforms.Sql100AndUp,
+SqlResourcePool, property, int, MinCpuPercent, SqlPlatforms.Sql100AndUp,
+SqlResourcePool, property, int, MaxCpuPercent, SqlPlatforms.Sql100AndUp,
+SqlResourcePool, property, int, MinMemoryPercent, SqlPlatforms.Sql100AndUp,
+SqlResourcePool, property, int, MaxMemoryPercent, SqlPlatforms.Sql100AndUp,
+SqlResourcePool, property, int, CapCpuPercent, SqlPlatforms.Sql110AndUp,
+SqlResourcePool, property, int, MinIopsPerVolume, SqlPlatforms.Sql120AndUp,
+SqlResourcePool, property, int, MaxIopsPerVolume, SqlPlatforms.Sql120AndUp,
+SqlRole, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlRole, parentRelationship, SqlRoleMembership, Memberships,  SqlPlatforms.All
+SqlRole, parentRelationship, SqlRoleMembership, RoleMemberships,  SqlPlatforms.All
+SqlRole, parentRelationship, SqlPermissionStatement, GrantedPermissions,  SqlPlatforms.All
+SqlRole, parentRelationship, ISqlAuthorizedObject, AuthorizedObjects,  SqlPlatforms.All
+SqlRole, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlRole, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlRoleMembership, childRelationship, SqlDatabaseSecurityPrincipal, Member,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlRoleMembership, childRelationship, SqlRole, Role,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlRoute, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlRoute, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlRoute, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlRoute, property, string, Service, SqlPlatforms.OnPremises,
+SqlRoute, property, string, BrokerInstanceIdentifier, SqlPlatforms.OnPremises,
+SqlRoute, property, int?, Lifetime, SqlPlatforms.OnPremises,
+SqlRoute, property, string, Address, SqlPlatforms.OnPremises,
+SqlRoute, property, string, MirrorAddress, SqlPlatforms.OnPremises,
+SqlRule, childRelationship, ISqlLegacyDataConstraintTarget, BoundTargets,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlRule, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlRule, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlRule, externalProperty, SqlScriptProperty, ExpressionScript,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlScalarFunction, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlScalarFunction, childRelationship, SqlTypeSpecifierBase, Type,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlScalarFunction, childRelationship, ISqlFunctionImplementation, FunctionBody,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlScalarFunction, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlScalarFunction, childRelationship, SqlSubroutineParameter, Parameters,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlScalarFunction, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlScalarFunction, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlScalarFunction, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlScalarFunction, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlScalarFunction, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlScalarFunction, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlScalarFunction, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlScalarFunction, property, bool, IsInlineable, SqlPlatforms.Sql150AndSqlAzureV12,
+SqlScalarFunction, property, bool, IsInline, SqlPlatforms.Sql150AndSqlAzureV12,
+SqlScalarFunction, property, bool, IsSchemaBound, SqlPlatforms.All,
+SqlScalarFunction, property, bool, DoReturnNullForNullInput, SqlPlatforms.All,
+SqlScalarFunction, property, bool, IsCalledForNullInput, SqlPlatforms.All,
+SqlScalarFunction, property, bool, IsNativeCompiled, SqlPlatforms.All,
+SqlScalarFunction, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlScalarFunction, property, bool, IsCaller, SqlPlatforms.All,
+SqlScalarFunction, property, bool, IsSelf, SqlPlatforms.All,
+SqlScalarFunction, property, bool, IsOwner, SqlPlatforms.All,
+SqlScalarFunction, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlScalarFunction, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlScalarFunction, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlSchema, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlSchema, parentRelationship, ISqlSchemaObject, Objects,  SqlPlatforms.All
+SqlSchema, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSchema, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlScript, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlScript, property, string, BodyScript, SqlPlatforms.All,
+SqlScriptFunctionImplementation, parentRelationship, SqlFunction, Parent,  SqlPlatforms.All
+SqlScriptFunctionImplementation, externalProperty, SqlScriptProperty, BodyScript,  SqlPlatforms.All
+SqlSearchProperty, childRelationship, SqlSearchPropertyList, SearchPropertyList,  SqlPlatforms.Sql110AndUp, ModelRelationshipType.Hierarchical
+SqlSearchProperty, property, string, PropertySetGuid, SqlPlatforms.Sql110AndUp,
+SqlSearchProperty, property, int, Identifier, SqlPlatforms.Sql110AndUp,
+SqlSearchProperty, property, string, Description, SqlPlatforms.Sql110AndUp,
+SqlSearchPropertyList, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlSearchPropertyList, parentRelationship, SqlSearchProperty, SearchProperties,  SqlPlatforms.All
+SqlSearchPropertyList, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlSecurityPolicy, childRelationship, SqlSecurityPredicate, Predicates,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlSecurityPolicy, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlSecurityPolicy, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSecurityPolicy, property, bool, Enabled, SqlPlatforms.All,
+SqlSecurityPolicy, property, bool, NotForReplication, SqlPlatforms.All,
+SqlSecurityPolicy, property, bool, IsSchemaBound, SqlPlatforms.All,
+SqlSecurityPredicate, childRelationship, ISqlColumnSource, TargetObject,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlSecurityPredicate, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlSecurityPredicate, parentRelationship, SqlSecurityPolicy, Parent,  SqlPlatforms.All
+SqlSecurityPredicate, property, int, Operation, SqlPlatforms.All,
+SqlSecurityPredicate, property, int, PredicateType, SqlPlatforms.All,
+SqlSecurityPredicate, externalProperty, SqlScriptProperty, BodyScript,  SqlPlatforms.All
+SqlSelectiveXmlIndex, childRelationship, SqlTable, IndexedObject,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Hierarchical
+SqlSelectiveXmlIndex, childRelationship, SqlColumn, Column,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlSelectiveXmlIndex, childRelationship, SqlSelectiveXmlIndex, UsingPrimarySelectiveXmlIndex,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlSelectiveXmlIndex, childRelationship, SqlPromotedNodePathBase, ForPrimaryPromotedPath,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlSelectiveXmlIndex, childRelationship, SqlXmlNamespace, XmlNamespaces,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlSelectiveXmlIndex, childRelationship, SqlPromotedNodePathBase, PromotedPaths,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlSelectiveXmlIndex, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSelectiveXmlIndex, property, bool, IsPrimary, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, bool, IsPadded, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, int?, FillFactor, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, bool, DoAllowRowLocks, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, bool, DoAllowPageLocks, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, bool, DoRecomputeStatistics, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSelectiveXmlIndex, property, bool, IsDisabled, SqlPlatforms.All,
+SqlSequence, childRelationship, SqlTypeSpecifierBase, TypeSpecifier,  SqlPlatforms.Sql110AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlSequence, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlSequence, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlSequence, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlSequence, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSequence, property, bool, IsCycling, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, bool, IsCached, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, int?, CacheSize, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, bool, HasNoMaxValue, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, bool, HasNoMinValue, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, string, MinValue, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, string, MaxValue, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, string, Increment, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSequence, property, string, StartValue, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlServerAudit, property, string, FilePath, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int?, MaxSize, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int, MaxSizeUnit, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, bool, IsUnlimitedFileSize, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int?, MaxRolloverFiles, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, bool, IsUnlimitedMaxRolloverFiles, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, bool, IsReserveDiskSpaceOn, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int, QueueDelay, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, string, AuditGuid, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int, OnFailureAction, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int, AuditTarget, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, bool, IsDisabled, SqlPlatforms.Sql100AndUp,
+SqlServerAudit, property, int?, MaxFiles, SqlPlatforms.Sql110AndUp,
+SqlServerAudit, externalProperty, SqlScriptProperty, PredicateExpression,  SqlPlatforms.Sql110AndUp
+SqlServerAuditSpecification, childRelationship, SqlServerAudit, ServerAudit,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlServerAuditSpecification, childRelationship, SqlAuditActionGroup, AuditActionGroups,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Composing
+SqlServerAuditSpecification, property, bool, IsStateOn, SqlPlatforms.Sql100AndUp,
+SqlServerDdlTrigger, childRelationship, SqlTriggerEventTypeSpecifier, EventType,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlServerDdlTrigger, childRelationship, SqlEventGroupSpecifier, EventGroup,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlServerDdlTrigger, childRelationship, ISqlModelElement, BodyDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlServerDdlTrigger, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlServerDdlTrigger, childRelationship, SqlUser, User,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlServerDdlTrigger, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlServerDdlTrigger, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlServerDdlTrigger, property, bool, IsLogon, SqlPlatforms.OnPremises,
+SqlServerDdlTrigger, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlServerDdlTrigger, property, int, SqlTriggerType, SqlPlatforms.All,
+SqlServerDdlTrigger, property, bool, IsDisabled, SqlPlatforms.All,
+SqlServerDdlTrigger, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlServerDdlTrigger, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlServerDdlTrigger, property, bool, IsCaller, SqlPlatforms.All,
+SqlServerDdlTrigger, property, bool, IsSelf, SqlPlatforms.All,
+SqlServerDdlTrigger, property, bool, IsOwner, SqlPlatforms.All,
+SqlServerDdlTrigger, property, string, MethodName, SqlPlatforms.All,
+SqlServerDdlTrigger, property, string, ClassName, SqlPlatforms.All,
+SqlServerDdlTrigger, externalProperty, SqlScriptProperty, BodyScript,  SqlPlatforms.All
+SqlServerEventNotification, childRelationship, SqlEventTypeSpecifierBase, EventType,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlServerEventNotification, childRelationship, SqlEventGroupSpecifier, EventGroup,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlServerEventNotification, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlServerEventNotification, property, bool, IsWithFanIn, SqlPlatforms.OnPremises,
+SqlServerEventNotification, property, string, BrokerInstanceSpecifier, SqlPlatforms.OnPremises,
+SqlServerEventNotification, property, string, Service, SqlPlatforms.OnPremises,
+SqlServerOptions, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlServerRoleMembership, childRelationship, SqlServerSecurityPrincipal, Member,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlServerRoleMembership, childRelationship, ISqlServerRole, Role,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlService, childRelationship, SqlQueue, Queue,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlService, childRelationship, SqlContract, Contracts,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlService, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlService, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlService, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlService, property, bool, UseDefaultContract, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, childRelationship, SqlCertificate, AuthenticationCertificate,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlServiceBrokerLanguageSpecifier, property, int, AuthenticationWindowsMode, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, property, bool, DoUseCertificateFirst, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, property, int, EncryptionMode, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, property, int, EncryptionAlgorithmPart1, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, property, int, EncryptionAlgorithmPart2, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, property, bool, IsMessageForwarding, SqlPlatforms.OnPremises,
+SqlServiceBrokerLanguageSpecifier, property, int, MessageForwardSize, SqlPlatforms.OnPremises,
+SqlSignature, childRelationship, ISqlSignable, SignedObject,  SqlPlatforms.OnPremises, ModelRelationshipType.Hierarchical
+SqlSignature, childRelationship, SqlSignatureEncryptionMechanism, EncryptionMechanism,  SqlPlatforms.OnPremises, ModelRelationshipType.Composing
+SqlSignature, property, bool, IsCounter, SqlPlatforms.OnPremises,
+SqlSignatureEncryptionMechanism, childRelationship, SqlCertificate, Certificate,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlSignatureEncryptionMechanism, childRelationship, SqlAsymmetricKey, AsymmetricKey,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlSignatureEncryptionMechanism, property, string, Password, SqlPlatforms.OnPremises,
+SqlSignatureEncryptionMechanism, property, string, SignedBlob, SqlPlatforms.OnPremises,
+SqlSimpleColumn, childRelationship, SqlColumnEncryptionKey, ColumnEncryptionKey,  SqlPlatforms.Sql130AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlSimpleColumn, childRelationship, SqlTypeSpecifierBase, TypeSpecifier,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlSimpleColumn, parentRelationship, ISqlColumnSource, Parent,  SqlPlatforms.All
+SqlSimpleColumn, parentRelationship, SqlForeignKeyConstraint, ReferencingForeignKey,  SqlPlatforms.All
+SqlSimpleColumn, parentRelationship, SqlDefaultConstraint, Defaults,  SqlPlatforms.All
+SqlSimpleColumn, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSimpleColumn, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlSimpleColumn, parentRelationship, SqlLegacyDataConstraints, RulesDefaults,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSimpleColumn, property, string, Collation, SqlPlatforms.All,
+SqlSimpleColumn, property, bool, IsNullable, SqlPlatforms.All,
+SqlSimpleColumn, property, bool, IsIdentity, SqlPlatforms.All,
+SqlSimpleColumn, property, bool, IsRowGuidColumn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSimpleColumn, property, string, IdentitySeed, SqlPlatforms.All,
+SqlSimpleColumn, property, string, IdentityIncrement, SqlPlatforms.All,
+SqlSimpleColumn, property, bool, IdentityIsNotForReplication, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSimpleColumn, property, bool, IsFileStream, SqlPlatforms.Sql100AndUp,
+SqlSimpleColumn, property, bool, IsSparse, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSimpleColumn, property, int, GeneratedAlwaysType, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlSimpleColumn, property, string, MaskingFunction, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlSimpleColumn, property, bool, IsHidden, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlSimpleColumn, property, int, EncryptionType, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlSimpleColumn, property, string, EncryptionAlgorithmName, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlSimpleColumn, property, int, GraphType, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlSimpleColumn, property, bool, IsPseudoColumn, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlSoapLanguageSpecifier, childRelationship, SqlSoapMethodSpecification, WebMethods,  SqlPlatforms.Sql100 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlSoapLanguageSpecifier, property, bool, IsBatchEnabled, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, string, WsdlSpName, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, bool, IsDefaultWsdlSpName, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, bool, IsSessionEnabled, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, int, LoginType, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, int, SessionTimeout, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, bool, IsSessionNeverTimeout, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, string, DatabaseName, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, bool, IsDefaultDatabase, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, string, Namespace, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, bool, IsDefaultNamespace, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, int, SchemaType, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, int, CharacterSet, SqlPlatforms.Sql100
+SqlSoapLanguageSpecifier, property, int, HeaderLimit, SqlPlatforms.Sql100
+SqlSoapMethodSpecification, childRelationship, SqlSubroutine, RelatedMethod,  SqlPlatforms.Sql100 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlSoapMethodSpecification, property, string, WebMethodNamespace, SqlPlatforms.Sql100
+SqlSoapMethodSpecification, property, string, WebMethodAlias, SqlPlatforms.Sql100
+SqlSoapMethodSpecification, property, int, MethodSchemaType, SqlPlatforms.Sql100
+SqlSoapMethodSpecification, property, int, Format, SqlPlatforms.Sql100
+SqlSpatialIndex, childRelationship, SqlTable, IndexedObject,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Hierarchical
+SqlSpatialIndex, childRelationship, SqlColumn, Column,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlSpatialIndex, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlSpatialIndex, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlSpatialIndex, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlSpatialIndex, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSpatialIndex, property, int, Tessellation, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, double?, XMin, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, double?, YMin, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, double?, XMax, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, double?, YMax, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, int, GridDensityLevel1, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, int, GridDensityLevel2, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, int, GridDensityLevel3, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, int, GridDensityLevel4, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, int?, CellsPerObject, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, bool, IsPadded, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlSpatialIndex, property, int, FillFactor, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlSpatialIndex, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, bool, DoRecomputeStatistics, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSpatialIndex, property, bool, DoAllowRowLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlSpatialIndex, property, bool, DoAllowPageLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlSpatialIndex, property, int, DataCompression, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlSpatialIndex, property, bool, IsDisabled, SqlPlatforms.All,
+SqlStatistic, childRelationship, ISqlStatisticBound, Subject,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlStatistic, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlStatistic, childRelationship, ISqlModelElement, ExpressionDependencies,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlStatistic, property, int, SamplingStyle, SqlPlatforms.All,
+SqlStatistic, property, int, SampleSize, SqlPlatforms.All,
+SqlStatistic, property, bool, NoRecompute, SqlPlatforms.All,
+SqlStatistic, property, string, StatsStream, SqlPlatforms.All,
+SqlStatistic, property, bool, Incremental, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlStatistic, externalProperty, SqlScriptProperty, FilterPredicate,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlSubroutineParameter, childRelationship, SqlTypeSpecifierBase, Type,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlSubroutineParameter, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSubroutineParameter, property, bool, IsOutput, SqlPlatforms.All,
+SqlSubroutineParameter, property, bool, IsVarying, SqlPlatforms.All,
+SqlSubroutineParameter, property, bool, IsReadOnly, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSubroutineParameter, property, bool, IsNullable, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlSubroutineParameter, externalProperty, SqlScriptProperty, DefaultExpressionScript,  SqlPlatforms.All
+SqlSymmetricKey, childRelationship, SqlSymmetricKeyEncryptionPassword, EncryptionPasswords,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Composing
+SqlSymmetricKey, childRelationship, SqlCertificate, EncryptionCertificates,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlSymmetricKey, childRelationship, SqlSymmetricKey, EncryptionSymmetricKeys,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlSymmetricKey, childRelationship, SqlAsymmetricKey, EncryptionAsymmetricKeys,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlSymmetricKey, childRelationship, SqlCryptographicProvider, Provider,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlSymmetricKey, childRelationship, ISqlObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlSymmetricKey, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlSymmetricKey, property, string, KeySource, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSymmetricKey, property, int, Algorithm, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSymmetricKey, property, string, IdentityValue, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSymmetricKey, property, string, ProviderKeyName, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlSymmetricKey, property, int, CreationDisposition, SqlPlatforms.Sql100AndUp,
+SqlSymmetricKeyEncryptionPassword, property, string, EncryptionPassword, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlSynonym, childRelationship, ISqlSynonymTarget, ForObject,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlSynonym, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlSynonym, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlSynonym, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlSynonym, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlSynonym, externalProperty, SqlScriptProperty, ForObjectScript,  SqlPlatforms.All
+SqlTable, childRelationship, SqlDynamicColumnSource, DynamicObjectForChangeTable,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlTable, childRelationship, SqlFilegroup, FilegroupForTextImage,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlTable, TemporalSystemVersioningHistoryTable,  SqlPlatforms.Sql130AndUpAndSqlAzureV12, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlTable, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlTable, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlFilegroup, FileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlPartitionScheme, FileStreamPartitionScheme,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlTable, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlTable, parentRelationship, SqlTable, TemporalSystemVersioningCurrentTable,  SqlPlatforms.Sql130AndUpAndSqlAzureV12
+SqlTable, parentRelationship, SqlXmlIndex, XmlIndexes,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTable, parentRelationship, SqlSpatialIndex, SpatialIndexes,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTable, parentRelationship, SqlSelectiveXmlIndex, SelectiveXmlIndexes,  SqlPlatforms.Sql110AndUpAndSqlAzureV12
+SqlTable, parentRelationship, SqlColumnStoreIndex, ColumnStoreIndexes,  SqlPlatforms.Sql110AndUpAndSqlAzureV12
+SqlTable, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlTable, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlTable, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTable, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlTable, parentRelationship, SqlConstraint, Constraints,  SqlPlatforms.All
+SqlTable, parentRelationship, SqlStatistic, Statistics,  SqlPlatforms.All
+SqlTable, parentRelationship, SqlFullTextIndex, FullTextIndex,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTable, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlTable, parentRelationship, SqlSignature, Signatures,  SqlPlatforms.OnPremises
+SqlTable, property, int, TextInRowSize, SqlPlatforms.All,
+SqlTable, property, bool, IsLargeValueTypesOutOfRow, SqlPlatforms.All,
+SqlTable, property, bool, IsVardecimalStorageFormatOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTable, property, bool, IsChangeTrackingOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlTable, property, bool, IsTrackColumnsUpdatedOn, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlTable, property, bool, IsChangeDataCaptureOn, SqlPlatforms.Sql100AndUp,
+SqlTable, property, int, Durability, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlTable, property, bool, RemoteDataEnabled, SqlPlatforms.Sql130AndUp,
+SqlTable, property, int, RetentionValue, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlTable, property, int, RetentionUnit, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlTable, property, bool, IsNode, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlTable, property, bool, IsEdge, SqlPlatforms.Sql140AndUpAndSqlAzureV12,
+SqlTable, property, int, LockEscalation, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTable, property, bool, IsTableLockOnBulkLoad, SqlPlatforms.All,
+SqlTable, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlTable, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlTable, property, bool?, IsFileStreamNull, SqlPlatforms.Sql100AndUp,
+SqlTable, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlTable, property, bool, IsMemoryOptimized, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlTable, property, bool, IsAutoGeneratedHistoryTable, SqlPlatforms.All,
+SqlTableType, childRelationship, SqlTableTypeColumn, Columns,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Composing
+SqlTableType, childRelationship, SqlTableTypeConstraint, Constraints,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Composing
+SqlTableType, childRelationship, SqlTableTypeIndex, Indexes,  SqlPlatforms.Sql120AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlTableType, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlTableType, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlTableType, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTableType, property, bool, IsMemoryOptimized, SqlPlatforms.Sql120AndUpAndSqlAzureV12,
+SqlTableTypeCheckConstraint, childRelationship, ISqlModelElement, CheckExpressionDependencies,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlTableTypeCheckConstraint, parentRelationship, SqlTableType, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeCheckConstraint, externalProperty, SqlScriptProperty, CheckExpressionScript,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeComputedColumn, childRelationship, ISqlModelElement, ExpressionDependencies,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlTableTypeComputedColumn, childRelationship, SqlTypeSpecifierBase, TypeSpecifier,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Composing
+SqlTableTypeComputedColumn, parentRelationship, SqlTableType, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeComputedColumn, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTableTypeComputedColumn, property, bool, IsPersisted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeComputedColumn, property, bool?, IsPersistedNullable, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeComputedColumn, externalProperty, SqlScriptProperty, ExpressionScript,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeDefaultConstraint, childRelationship, SqlTableTypeSimpleColumn, ForColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlTableTypeDefaultConstraint, childRelationship, ISqlModelElement, ExpressionDependencies,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlTableTypeDefaultConstraint, parentRelationship, SqlTableType, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeDefaultConstraint, externalProperty, SqlScriptProperty, DefaultExpressionScript,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeIndex, childRelationship, SqlTableTypeIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlTableTypeIndex, parentRelationship, SqlTableType, Parent,  SqlPlatforms.All
+SqlTableTypeIndex, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTableTypeIndex, property, bool, IsUnique, SqlPlatforms.Sql130AndUpAndSqlAzureV12,
+SqlTableTypeIndex, property, bool, IsDisabled, SqlPlatforms.All,
+SqlTableTypeIndex, property, bool, IsHash, SqlPlatforms.All,
+SqlTableTypeIndex, property, int?, BucketCount, SqlPlatforms.All,
+SqlTableTypeIndexedColumnSpecification, childRelationship, SqlTableTypeColumn, Column,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Peer
+SqlTableTypeIndexedColumnSpecification, property, bool, IsAscending, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypePrimaryKeyConstraint, childRelationship, SqlTableTypeIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Composing
+SqlTableTypePrimaryKeyConstraint, parentRelationship, SqlTableType, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypePrimaryKeyConstraint, property, bool, IsClustered, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypePrimaryKeyConstraint, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypePrimaryKeyConstraint, property, bool, IsHash, SqlPlatforms.All,
+SqlTableTypePrimaryKeyConstraint, property, int?, BucketCount, SqlPlatforms.All,
+SqlTableTypeSimpleColumn, childRelationship, SqlTypeSpecifierBase, TypeSpecifier,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Composing
+SqlTableTypeSimpleColumn, parentRelationship, SqlTableType, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeSimpleColumn, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlTableTypeSimpleColumn, property, string, Collation, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeSimpleColumn, property, bool, IsNullable, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeSimpleColumn, property, bool, IsIdentity, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeSimpleColumn, property, bool, IsRowGuidColumn, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlTableTypeSimpleColumn, property, string, IdentitySeed, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeSimpleColumn, property, string, IdentityIncrement, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeUniqueConstraint, childRelationship, SqlTableTypeIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure, ModelRelationshipType.Composing
+SqlTableTypeUniqueConstraint, parentRelationship, SqlTableType, Parent,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.SqlAzure
+SqlTableTypeUniqueConstraint, property, bool, IsClustered, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeUniqueConstraint, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlTableTypeUniqueConstraint, property, bool, IsHash, SqlPlatforms.All,
+SqlTableTypeUniqueConstraint, property, int?, BucketCount, SqlPlatforms.All,
+SqlTcpProtocolSpecifier, property, int, ListenerPort, SqlPlatforms.OnPremises,
+SqlTcpProtocolSpecifier, property, string, ListenerIPv4, SqlPlatforms.OnPremises,
+SqlTcpProtocolSpecifier, property, string, ListenerIPv6, SqlPlatforms.OnPremises,
+SqlTcpProtocolSpecifier, property, bool, IsListeningAllIPs, SqlPlatforms.OnPremises,
+SqlTriggerEventTypeSpecifier, property, int, Order, SqlPlatforms.All,
+SqlTriggerEventTypeSpecifier, property, int, EventType, SqlPlatforms.All,
+SqlTypeSpecifier, childRelationship, SqlType, Type,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlTypeSpecifier, property, int, Scale, SqlPlatforms.All,
+SqlTypeSpecifier, property, int, Precision, SqlPlatforms.All,
+SqlTypeSpecifier, property, int, Length, SqlPlatforms.All,
+SqlTypeSpecifier, property, bool, IsMax, SqlPlatforms.All,
+SqlUniqueConstraint, childRelationship, ISqlSpecifiesTable, DefiningTable,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlUniqueConstraint, childRelationship, SqlIndexedColumnSpecification, ColumnSpecifications,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlUniqueConstraint, childRelationship, SqlFilegroup, Filegroup,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlUniqueConstraint, childRelationship, SqlPartitionScheme, PartitionScheme,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlUniqueConstraint, childRelationship, SqlColumn, PartitionColumn,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlUniqueConstraint, childRelationship, SqlDataCompressionOption, DataCompressionOptions,  SqlPlatforms.Sql100AndUpAndSqlAzureV12, ModelRelationshipType.Composing
+SqlUniqueConstraint, childRelationship, SqlFilegroup, FileStreamFilegroup,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlUniqueConstraint, childRelationship, SqlPartitionScheme, FileStreamPartitionScheme,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlUniqueConstraint, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlUniqueConstraint, property, bool, IsDisabled, SqlPlatforms.All,
+SqlUniqueConstraint, property, int?, FillFactor, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlUniqueConstraint, property, bool, IsPadded, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlUniqueConstraint, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.All,
+SqlUniqueConstraint, property, bool, DoRecomputeStatistics, SqlPlatforms.All,
+SqlUniqueConstraint, property, bool, DoAllowRowLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlUniqueConstraint, property, bool, DoAllowPageLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlUniqueConstraint, property, bool, IsClustered, SqlPlatforms.All,
+SqlUniqueConstraint, property, bool?, IsFileStreamNull, SqlPlatforms.Sql100AndUp,
+SqlUniqueConstraint, property, bool, IsHash, SqlPlatforms.All,
+SqlUniqueConstraint, property, int?, BucketCount, SqlPlatforms.All,
+SqlUser, childRelationship, SqlLogin, Login,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlUser, childRelationship, SqlCertificate, Certificate,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlUser, childRelationship, SqlAsymmetricKey, AsymmetricKey,  SqlPlatforms.OnPremises, ModelRelationshipType.Peer
+SqlUser, childRelationship, SqlSchema, DefaultSchema,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlUser, parentRelationship, SqlRoleMembership, RoleMemberships,  SqlPlatforms.All
+SqlUser, parentRelationship, SqlPermissionStatement, GrantedPermissions,  SqlPlatforms.All
+SqlUser, parentRelationship, ISqlAuthorizedObject, AuthorizedObjects,  SqlPlatforms.All
+SqlUser, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlUser, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlUser, property, bool, IsWithoutLogin, SqlPlatforms.All,
+SqlUser, property, int, AuthenticationType, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlUser, property, string, DefaultLanguage, SqlPlatforms.Sql110AndUp,
+SqlUser, property, string, Password, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlUser, property, string, Sid, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlUser, property, int, UserType, SqlPlatforms.SqlAzureV12,
+SqlUser, externalProperty, SqlScriptProperty, LoginIdentifierScript,  SqlPlatforms.OnPremises
+SqlUserDefinedDataType, childRelationship, SqlBuiltInType, Type,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlUserDefinedDataType, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlUserDefinedDataType, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlUserDefinedDataType, parentRelationship, SqlLegacyDataConstraints, RulesDefaults,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlUserDefinedDataType, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlUserDefinedDataType, property, bool, IsNullable, SqlPlatforms.All,
+SqlUserDefinedDataType, property, int, Scale, SqlPlatforms.All,
+SqlUserDefinedDataType, property, int, Precision, SqlPlatforms.All,
+SqlUserDefinedDataType, property, int, Length, SqlPlatforms.All,
+SqlUserDefinedDataType, property, bool, IsMax, SqlPlatforms.All,
+SqlUserDefinedServerRole, childRelationship, ISqlServerObjectAuthorizer, Authorizer,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlUserDefinedServerRole, parentRelationship, SqlServerRoleMembership, RoleMemberships,  SqlPlatforms.All
+SqlUserDefinedServerRole, parentRelationship, SqlPermissionStatement, GrantedPermissions,  SqlPlatforms.All
+SqlUserDefinedServerRole, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlUserDefinedServerRole, parentRelationship, ISqlServerAuthorizedObject, AuthorizedObjects,  SqlPlatforms.All
+SqlUserDefinedServerRole, parentRelationship, SqlServerRoleMembership, Memberships,  SqlPlatforms.All
+SqlUserDefinedType, childRelationship, SqlClrProperty, Properties,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlUserDefinedType, childRelationship, SqlClrMethod, Methods,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlUserDefinedType, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlUserDefinedType, childRelationship, SqlAssembly, Assembly,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlUserDefinedType, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlUserDefinedType, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlUserDefinedType, property, int, Format, SqlPlatforms.All,
+SqlUserDefinedType, property, int?, MaxByteSize, SqlPlatforms.All,
+SqlUserDefinedType, property, bool?, IsByteOrdered, SqlPlatforms.All,
+SqlUserDefinedType, property, string, ValidationMethodName, SqlPlatforms.All,
+SqlUserDefinedType, property, bool?, IsFixedLength, SqlPlatforms.All,
+SqlUserDefinedType, property, string, ClassName, SqlPlatforms.All,
+SqlView, childRelationship, SqlDynamicColumnSource, DynamicObjects,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlView, childRelationship, ISqlModelElement, QueryDependencies,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlView, childRelationship, SqlColumn, Columns,  SqlPlatforms.All, ModelRelationshipType.Composing
+SqlView, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlView, parentRelationship, SqlColumnStoreIndex, ColumnStoreIndexes,  SqlPlatforms.Sql110AndUpAndSqlAzureV12
+SqlView, parentRelationship, SqlIndex, Indexes,  SqlPlatforms.All
+SqlView, parentRelationship, SqlDmlTrigger, Triggers,  SqlPlatforms.All
+SqlView, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlView, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlView, parentRelationship, SqlStatistic, Statistics,  SqlPlatforms.All
+SqlView, parentRelationship, SqlSynonym, Synonyms,  SqlPlatforms.All
+SqlView, parentRelationship, SqlFullTextIndex, FullTextIndex,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlView, property, bool, IsEncrypted, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlView, property, bool, IsSchemaBound, SqlPlatforms.All,
+SqlView, property, bool, IsMetadataReported, SqlPlatforms.All,
+SqlView, property, bool, IsWithCheckOption, SqlPlatforms.All,
+SqlView, property, bool, IsColumnExplicitlyDefined, SqlPlatforms.All,
+SqlView, property, bool?, IsAnsiNullsOn, SqlPlatforms.All,
+SqlView, property, bool?, IsQuotedIdentifierOn, SqlPlatforms.All,
+SqlView, property, bool, IsReplicated, SqlPlatforms.OnPremises,
+SqlView, externalProperty, SqlScriptProperty, QueryScript,  SqlPlatforms.All
+SqlWorkloadGroup, childRelationship, SqlResourcePool, ResourcePool,  SqlPlatforms.Sql100AndUp, ModelRelationshipType.Peer
+SqlWorkloadGroup, property, int, Importance, SqlPlatforms.Sql100AndUp,
+SqlWorkloadGroup, property, int, RequestMaxMemoryGrantPercent, SqlPlatforms.Sql100AndUp,
+SqlWorkloadGroup, property, int, RequestMaxCpuTimeSec, SqlPlatforms.Sql100AndUp,
+SqlWorkloadGroup, property, int, RequestMemoryGrantTimeoutSec, SqlPlatforms.Sql100AndUp,
+SqlWorkloadGroup, property, int, MaxDop, SqlPlatforms.Sql100AndUp,
+SqlWorkloadGroup, property, int, GroupMaxRequests, SqlPlatforms.Sql100AndUp,
+SqlXmlIndex, childRelationship, SqlTable, IndexedObject,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Hierarchical
+SqlXmlIndex, childRelationship, SqlColumn, Column,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlXmlIndex, childRelationship, SqlXmlIndex, UsingPrimaryXmlIndex,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlXmlIndex, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlXmlIndex, property, bool, IsPrimary, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, int, PrimaryXmlIndexUsage, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, bool, IsPadded, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, int?, FillFactor, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, bool, DoRecomputeStatistics, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, bool, DoAllowRowLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, bool, DoAllowPageLocks, SqlPlatforms.Sql100AndUpAndSqlAzureV12
+SqlXmlIndex, property, bool, DoIgnoreDuplicateKey, SqlPlatforms.Sql100AndUpAndSqlAzureV12,
+SqlXmlIndex, property, bool, IsDisabled, SqlPlatforms.All,
+SqlXmlNamespace, property, string, NamespaceUri, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlXmlNamespace, property, string, Prefix, SqlPlatforms.Sql110AndUpAndSqlAzureV12,
+SqlXmlSchemaCollection, childRelationship, SqlSchema, Schema,  SqlPlatforms.All, ModelRelationshipType.Hierarchical
+SqlXmlSchemaCollection, parentRelationship, SqlExtendedProperty, ExtendedProperties,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlXmlSchemaCollection, parentRelationship, SqlPermissionStatement, Permissions,  SqlPlatforms.All
+SqlXmlSchemaCollection, externalProperty, SqlScriptProperty, SchemaExpression,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90
+SqlXmlTypeSpecifier, childRelationship, SqlXmlSchemaCollection, XmlSchemaCollection,  SqlPlatforms.Sql100AndUpAndSqlAzureV12 | SqlPlatforms.Sql90, ModelRelationshipType.Peer
+SqlXmlTypeSpecifier, childRelationship, SqlType, Type,  SqlPlatforms.All, ModelRelationshipType.Peer
+SqlXmlTypeSpecifier, property, int, XmlStyle, SqlPlatforms.All,
